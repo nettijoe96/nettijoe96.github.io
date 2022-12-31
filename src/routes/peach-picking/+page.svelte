@@ -1,6 +1,5 @@
+<h1>Peach Picking</h1>
 <body>
-    Peach Picking
-    <br> 
     <br> We wrap ourselves
     <br> In light linen coats
     <br> Grey woolen socks
@@ -36,7 +35,21 @@
 </body>
 
 <style>
+    h1 {
+        margin-left: 42.5%;
+        width: 15%;
+        text-align: center;
+        margin-top: 3%;
+        margin-bottom: 0%;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #eee;
+        border-bottom-color: rgb(238, 238, 238);
+    }
+
     body {
+        border-top: 0%;
+        margin-top: 0%;
+        padding-top: 0%;
         text-align: center;
     }
 </style>
