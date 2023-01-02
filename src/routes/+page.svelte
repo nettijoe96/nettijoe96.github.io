@@ -6,6 +6,8 @@
     // green 52CC66
 
     let poems = [
+        //"nft_link": "TODO",
+        //"date": "TODO"
         {
             name: "A Boy Sits Upon A Tower",
             route: "/a-boy-sits-upon-a-tower"
@@ -15,9 +17,37 @@
             route: "/a-door-for-change"
         },
         {
+            name: "Back!",
+            route: "/back!"
+        },
+        {
+            name: "Forgive",
+            route: "/forgive"
+        },
+        {
+            name: "Home",
+            route: "/home"
+        },
+        {
             name: "Peach Picking",
             route: "/peach-picking"
         },
+        {
+            name: "Reconciliation",
+            route: "/reconciliation"
+        },
+        {
+            name: "Stoic Haikus",
+            route: "/stoic-haikus"
+        },
+        {
+            name: "The Matchbox",
+            route: "/the-matchbox"
+        },
+        {
+            name: "To Dance",
+            route: "/to-dance"
+        }
     ]
 </script>
 
@@ -25,9 +55,9 @@
     <h1>Poetry</h1>
 
     {#each poems as {name, route}, i}
-    <h2>
-        <a href={route}>{name}</a>
-    </h2>
+        <h2>
+            <a href={route}>{name}</a>
+        </h2>
     {/each}
 </div>
 
