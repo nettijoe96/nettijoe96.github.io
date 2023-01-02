@@ -56,7 +56,7 @@
 
     {#each poems as {name, route}, i}
         <h2>
-            <a href={route}>{name}</a>
+            <a style="text-decoration:none" href={route}>{name}</a>
         </h2>
     {/each}
 </div>
@@ -68,6 +68,7 @@
     } */
 
     h1 {
+        font-weight: bold;
         margin-left: 42.5%;
         width: 15%;
         text-align: center;
@@ -76,16 +77,20 @@
         padding-bottom: 1px;
         border-bottom: 1px solid #eee;
         border-bottom-color: rgb(238, 238, 238);
-        color: white;
+        color: black;
+        font-family: 'Inter', sans-serif;
     }
 
     h2 {
-        text-align: center;
-        color: white;
+        margin-left: 35%;
+        width: 50%;
+        text-align: left;
+        color: black;
+        font-family: 'Inter', sans-serif;
     }
 
     a {
-        color: white;
+        color: black;
     }
 
 </style>
