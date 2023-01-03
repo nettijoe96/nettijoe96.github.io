@@ -72,7 +72,7 @@
         margin-left: 42.5%;
         width: 15%;
         text-align: center;
-        margin-top: 3%;
+        /* margin-top: 3%; */
         margin-bottom: 0%;
         padding-bottom: 1px;
         border-bottom: 1px solid #eee;
