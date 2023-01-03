@@ -10,7 +10,8 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: process.env.NODE_ENV === "production" ? "https://nettijoe96.github.io/" : "",
+			// https://vitejs.dev/guide/static-deploy.html#github-pages
+			base: "/",
 		},
 	}
 };
