@@ -1,14 +1,22 @@
-<h1>To Dance</h1>
+<script>
+    import "../poem.css"
+</script>
+
 <body>
-    <br> Light into black
-    <br> Black to light.
-    <br> It's <em>all</em>, we ever needed
-    <br> Ever needed 
-    <br> To dance, tonight
-    <br> It's all we needed.
-    <br> Combining 3 
-    <br> to 1 ...
-    <br> One step, two
-    <br> Ever needed
-    <br> To dance.
+    <h1>To Dance</h1>
+    <div class="poem">
+        <div class="poemtext"
+        > Light into black
+        Black to light.
+        It's <em>all</em>, we ever needed
+        Ever needed 
+        To dance, tonight
+        It's all we needed.
+        Combining 3 
+        to 1 ...
+        One step, two
+        Ever needed
+        To dance.
+        </div>
+    </div>
 </body>

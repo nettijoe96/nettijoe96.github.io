@@ -1,14 +1,22 @@
-<h1>Stoic Haikus</h1>
+<script>
+    import "../poem.css"
+</script>
+
 <body>
-    <br> Take what's for granted.                     
-    <br> Use it with daily comforts                                                 
-    <br> Watch it disappear  
-    <br> 
-    <br> Loose something needed.                      
-    <br> Become ultimately free                                                     
-    <br> Cherish everything
-    <br> 
-    <br> Looking for the gold.                               
-    <br> Only the silver appears                          
-    <br> Better anyways.    
+    <h1>Stoic Haikus</h1>
+    <div class="poem">
+        <div class="poemtext"
+            > Take what's for granted.                     
+            Use it with daily comforts                                                 
+            Watch it disappear  
+            
+            Loose something needed.                      
+            Become ultimately free                                                     
+            Cherish everything
+            
+            Looking for the gold.                               
+            Only the silver appears                          
+            Better anyways.    
+        </div>
+    </div>
 </body>  

@@ -1,54 +1,63 @@
-<h1>A boy sits upon a tower</h1>
+<script>
+    import "../poem.css"
+</script>
+
 <body>
-    <br> A boy sits upon a tower
-    <br> And cries to the sun 
-    <br> To the stars
-    <br> Alas alas where are you
-    <br> My fine maiden
-    <br> Alas where are you
-    <br> My dear
-    <br> 
-    <br> A boy sits upon a tower
-    <br> Hugged by the wind
-    <br> He says
-    <br> “Hold me close”
-    <br> He says to the wind
-    <br> “Hold me”
-    <br> Alas alas where are you
-    <br> My dear
-    <br> Alas, my fine maiden
-    <br> Where are you
-    <br> 
-    <br> A boy sits upon tower 
-    <br> That he built in the desert
-    <br> He cannot get down.
-    <br> He sits upon a tower
-    <br> And sees his mother weeping
-    <br> Alas alas my boy
-    <br> Where are you
-    <br> Alas where are you
-    <br> My dear
-    <br> 
-    <br> A boy sits upon a tower
-    <br> On a lone dark night
-    <br> Fast asleep
-    <br> He dreams of an axe 
-    <br> Crashing through a black thicket 
-    <br> Of branches and sticks
-    <br> 
-    <br> He dreams silly dreams
-    <br> That cannot come true
-    <br> Sailing ships 
-    <br> Silky streams
-    <br> He remembers her smile
-    <br> Enveloped and full 
-    <br> Like wildfire — her eyes
-    <br> Forging anew
-    <br> 
-    <br> Alas alas where are you
-    <br> Alas where are you 
-    <br> My dear
-    <br> Alas alas maiden so fine
-    <br> Alas where are you 
-    <br> My dear
+    <h1>A boy sits upon a tower</h1>
+
+    <div class="poem">
+        <div class="poemtext"
+            > A boy sits upon a tower
+            And cries to the sun 
+            To the stars
+            Alas alas where are you
+            My fine maiden
+            Alas where are you
+            My dear
+            
+            A boy sits upon a tower
+            Hugged by the wind
+            He says
+            “Hold me close”
+            He says to the wind
+            “Hold me”
+            Alas alas where are you
+            My dear
+            Alas, my fine maiden
+            Where are you
+            
+            A boy sits upon tower 
+            That he built in the desert
+            He cannot get down.
+            He sits upon a tower
+            And sees his mother weeping
+            Alas alas my boy
+            Where are you
+            Alas where are you
+            My dear
+            
+            A boy sits upon a tower
+            On a lone dark night
+            Fast asleep
+            He dreams of an axe 
+            Crashing through a black thicket 
+            Of branches and sticks
+            
+            He dreams silly dreams
+            That cannot come true
+            Sailing ships 
+            Silky streams
+            He remembers her smile
+            Enveloped and full 
+            Like wildfire — her eyes
+            Forging anew
+            
+            Alas alas where are you
+            Alas where are you 
+            My dear
+            Alas alas maiden so fine
+            Alas where are you 
+            My dear
+        </div>
+    </div>
 </body>

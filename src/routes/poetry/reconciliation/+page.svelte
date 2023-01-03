@@ -1,87 +1,95 @@
-<h1>Reconciliation</h1>
-<p><em>fabrication of a good memory</em></p>
+<script>
+    import "../poem.css"
+</script>
+
 <body>
-    <br> On nights
-    <br> That crawl
-    <br> I say to you
-    <br> Bless the hearts 
-    <br> That linger in the faintest corners
-    <br> Of the mind
-    <br> 
-    <br> Bless the place
-    <br> Where land meets sea
-    <br> And all night fades
-    <br> Into black bitterness
-    <br> Whose currents 
-    <br> Well up inside 
-    <br> 
-    <br> When all you can do
-    <br> Is sit by the dock 
-    <br> And let the water pass
-    <br> Between your toes
-    <br> On the shore.
-    <br> That is okay
-    <br> 
-    <br> If all you can do 
-    <br> Is wait
-    <br> As the night rolls 
-    <br> On the back
-    <br> Of the rising tide.
-    <br> It's okay 
-    <br> 
-    <br> But occasionally 
-    <br> You can walk
-    <br> Down the dock
-    <br> To the precipice 
-    <br> Of the grey water
-    <br> Beneath your feet
-    <br> 
-    <br> Occasionally
-    <br> You can look
-    <br> Down into that pool
-    <br> And see a
-    <br> Beautiful face
-    <br> Lost in the waves
-    <br> 
-    <br> <br> But when the time comes
-    <br> You will turn 
-    <br> Your attention
-    <br> To the distant
-    <br> Shimmer of light
-    <br> On the horizon
-    <br> 
-    <br> When that time comes 
-    <br> You will leap
-    <br> Onto the pale cold water
-    <br> Wondering if it will hold
-    <br> Half wishing
-    <br> You will drown
-    <br> 
-    <br> You might
-    <br> Kick your feet
-    <br> And swim forward
-    <br> Inch by inch
-    <br> Consumed
-    <br> At every turn
-    <br> 
-    <br> But he who lives
-    <br> Righteously
-    <br> Shall rise up
-    <br> And walk
-    <br> On tenuous ground
-    <br> Towards the light
-    <br> 
-    <br> He who lives
-    <br> Acknowledges what is below
-    <br> And still
-    <br> Continues to trust
-    <br> That it is
-    <br> Enough
-    <br> 
-    <br> For sometimes
-    <br> On a day like 
-    <br> No other day
-    <br> The world has nothing
-    <br> With you but to say
-    <br> That all is well
+    <h1>Reconciliation</h1>
+    <p><em>fabrication of a good memory</em></p>
+    <div class="poem">
+        <div class="poemtext"
+            > On nights
+            That crawl
+            I say to you
+            Bless the hearts 
+            That linger in the faintest corners
+            Of the mind
+            
+            Bless the place
+            Where land meets sea
+            And all night fades
+            Into black bitterness
+            Whose currents 
+            Well up inside 
+            
+            When all you can do
+            Is sit by the dock 
+            And let the water pass
+            Between your toes
+            On the shore.
+            That is okay
+            
+            If all you can do 
+            Is wait
+            As the night rolls 
+            On the back
+            Of the rising tide.
+            It's okay 
+            
+            But occasionally 
+            You can walk
+            Down the dock
+            To the precipice 
+            Of the grey water
+            Beneath your feet
+            
+            Occasionally
+            You can look
+            Down into that pool
+            And see a
+            Beautiful face
+            Lost in the waves
+            
+            But when the time comes
+            You will turn 
+            Your attention
+            To the distant
+            Shimmer of light
+            On the horizon
+            
+            When that time comes 
+            You will leap
+            Onto the pale cold water
+            Wondering if it will hold
+            Half wishing
+            You will drown
+            
+            You might
+            Kick your feet
+            And swim forward
+            Inch by inch
+            Consumed
+            At every turn
+            
+            But he who lives
+            Righteously
+            Shall rise up
+            And walk
+            On tenuous ground
+            Towards the light
+            
+            He who lives
+            Acknowledges what is below
+            And still
+            Continues to trust
+            That it is
+            Enough
+            
+            For sometimes
+            On a day like 
+            No other day
+            The world has nothing
+            With you but to say
+            That all is well
+        </div>
+    </div>
 </body>

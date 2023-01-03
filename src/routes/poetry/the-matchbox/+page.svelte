@@ -1,57 +1,65 @@
-<h1>The Matchbox</h1>
+<script>
+    import "../poem.css"
+</script>
+
 <body>
-    <br> The man wears
-    <br> Leather boots
-    <br> Caked with mud
-    <br> From years past
-    <br> 
-    <br> He crouches
-    <br> Blowing soft
-    <br> On hot coals
-    <br> In the stove
-    <br> 
-    <br> In the smoke
-    <br> The embers
-    <br> Fall and fail
-    <br> Raining ash
-    <br> 
-    <br> Papa, dad
-    <br> His son cries
-    <br> Try again
-    <br> One more time
-    <br> 
-    <br> The man bends
-    <br> His head low
-    <br> And blows hard
-    <br> But nothing
-    <br> 
-    <br> Son, listen
-    <br> It was easy
-    <br> Years ago
-    <br> But no more
-    <br> 
-    <br> Father, dad
-    <br> I know not
-    <br> Of your fire
-    <br> Nor my own
-    <br> 
-    <br> But I know
-    <br> Fires are lit
-    <br> From with out
-    <br> Not within
-    <br> 
-    <br> Let us go
-    <br> Somewhere else
-    <br> And we shall
-    <br> Find a match
-    <br> 
-    <br> And with that
-    <br> The two left
-    <br> For the hills
-    <br> Far beyond
-    <br> 
-    <br> Over the sea
-    <br> Towards the sky
-    <br> Following
-    <br> The north star
+    <h1>The Matchbox</h1>
+    <div class="poem">
+        <div class="poemtext"
+            > The man wears
+            Leather boots
+            Caked with mud
+            From years past
+            
+            He crouches
+            Blowing soft
+            On hot coals
+            In the stove
+            
+            In the smoke
+            The embers
+            Fall and fail
+            Raining ash
+            
+            Papa, dad
+            His son cries
+            Try again
+            One more time
+            
+            The man bends
+            His head low
+            And blows hard
+            But nothing
+            
+            Son, listen
+            It was easy
+            Years ago
+            But no more
+            
+            Father, dad
+            I know not
+            Of your fire
+            Nor my own
+            
+            But I know
+            Fires are lit
+            From with out
+            Not within
+            
+            Let us go
+            Somewhere else
+            And we shall
+            Find a match
+            
+            And with that
+            The two left
+            For the hills
+            Far beyond
+            
+            Over the sea
+            Towards the sky
+            Following
+            The north star
+        </div>
+    </div>
 </body>

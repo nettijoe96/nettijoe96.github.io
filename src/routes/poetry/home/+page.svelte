@@ -1,12 +1,20 @@
-<h1>Home</h1>
+<script>
+    import "../poem.css"
+</script>
+
 <body>
-    <br> Outward--soaring!
-    <br> On an open night--nothing
-    <br> Grabbing--to rest off
-    <br> Rest easy, rest clear
-    <br> And steer the ship
-    <br> Towards shimmering
-    <br> Distinctly specific 
-    <br> Reflections of Him
-    <br> Calling me back--home  
+    <h1>Home</h1>
+        <div class="poem">
+            <div class="poemtext"
+                > Outward--soaring!
+                On an open night--nothing
+                Grabbing--to rest off
+                Rest easy, rest clear
+                And steer the ship
+                Towards shimmering
+                Distinctly specific 
+                Reflections of Him
+                Calling me back--home  
+            </div>
+        </div>
 </body>
