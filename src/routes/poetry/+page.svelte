@@ -1,6 +1,7 @@
 <script>
     import '../../styles.css'
 	import Menu from '../Menu.svelte';
+    import { base } from "$app/paths";
 
     // orange FFA755
     // purple B694FF
@@ -11,43 +12,43 @@
         //"date": "TODO"
         {
             name: "A Boy Sits Upon A Tower",
-            route: "/a-boy-sits-upon-a-tower"
+            route: "poetry/a-boy-sits-upon-a-tower"
         },
         {
             name: "A Door For Change",
-            route: "/a-door-for-change"
+            route: "poetry/a-door-for-change"
         },
         {
             name: "Back!",
-            route: "/back!"
+            route: "poetry/back!"
         },
         {
             name: "Forgive",
-            route: "/forgive"
+            route: "poetry/forgive"
         },
         {
             name: "Home",
-            route: "/home"
+            route: "poetry/home"
         },
         {
             name: "Peach Picking",
-            route: "/peach-picking"
+            route: "poetry/peach-picking"
         },
         {
             name: "Reconciliation",
-            route: "/reconciliation"
+            route: "poetry/reconciliation"
         },
         {
             name: "Stoic Haikus",
-            route: "/stoic-haikus"
+            route: "poetry/stoic-haikus"
         },
         {
             name: "The Matchbox",
-            route: "/the-matchbox"
+            route: "poetry/the-matchbox"
         },
         {
             name: "To Dance",
-            route: "/to-dance"
+            route: "poetry/to-dance"
         }
     ]
 </script>
@@ -57,7 +58,7 @@
     <ul>
         {#each poems as {name, route}, i}
             <li>
-                <a href={route}>
+                <a href={base}/{route}>
                     <span>{name}</span>
                 </a>
             </li>

@@ -11,7 +11,6 @@ const config = {
 		adapter: adapter(),
 		paths: {
 			// https://vitejs.dev/guide/static-deploy.html#github-pages
-			base: "/",
 		},
 	}
 };
