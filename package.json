@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"deploy": "touch build/.nojekyll && npx gh-pages -d build -t true",
+		"deploy": "cp .nojekyll build && cp CNAME build && npx gh-pages -d build -t true",
 		"preview": "vite preview",
 		"test": "playwright test",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
