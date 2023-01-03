@@ -1,4 +1,5 @@
-import{S as E,i as D,s as x,k as i,q as p,a as I,l,m as h,r as k,h as o,c as Y,n as W,b as S,G as e,B as O}from"../../../../chunks/index-14cc5f3c.js";/* empty css                              */function C(_){let n,r,w,m,c,d,y,f,a,s,g;return{c(){n=i("body"),r=i("h1"),w=p("Reconciliation"),m=I(),c=i("p"),d=i("em"),y=p("fabrication of a good memory"),f=I(),a=i("div"),s=i("div"),g=p(`On nights
+import{S as I,i as Y,s as W,k as h,q as k,a as E,l as r,m as c,r as v,h as o,c as D,n as w,b as x,G as e,B as O}from"../../../../chunks/index-14cc5f3c.js";/* empty css                              */function S(T){let n,t,y,a,d,m,f,s,l,g;return{c(){n=h("body"),t=h("h1"),y=k(`Reconciliation
+        `),a=h("p"),d=h("em"),m=k("fabrication of a good memory"),f=E(),s=h("div"),l=h("div"),g=k(`On nights
             That crawl
             I say to you
             Bless the hearts 
@@ -80,7 +81,8 @@ import{S as E,i as D,s as x,k as i,q as p,a as I,l,m as h,r as k,h as o,c as Y,n
             No other day
             The world has nothing
             With you but to say
-            That all is well`),this.h()},l(u){n=l(u,"BODY",{});var t=h(n);r=l(t,"H1",{});var v=h(r);w=k(v,"Reconciliation"),v.forEach(o),m=Y(t),c=l(t,"P",{});var b=h(c);d=l(b,"EM",{});var A=h(d);y=k(A,"fabrication of a good memory"),A.forEach(o),b.forEach(o),f=Y(t),a=l(t,"DIV",{class:!0});var B=h(a);s=l(B,"DIV",{class:!0});var T=h(s);g=k(T,`On nights
+            That all is well`),this.h()},l(u){n=r(u,"BODY",{});var i=c(n);t=r(i,"H1",{class:!0});var p=c(t);y=v(p,`Reconciliation
+        `),a=r(p,"P",{class:!0});var b=c(a);d=r(b,"EM",{});var _=c(d);m=v(_,"fabrication of a good memory"),_.forEach(o),b.forEach(o),p.forEach(o),f=D(i),s=r(i,"DIV",{class:!0});var A=c(s);l=r(A,"DIV",{class:!0});var B=c(l);g=v(B,`On nights
             That crawl
             I say to you
             Bless the hearts 
@@ -162,4 +164,4 @@ import{S as E,i as D,s as x,k as i,q as p,a as I,l,m as h,r as k,h as o,c as Y,n
             No other day
             The world has nothing
             With you but to say
-            That all is well`),T.forEach(o),B.forEach(o),t.forEach(o),this.h()},h(){W(s,"class","poemtext"),W(a,"class","poem")},m(u,t){S(u,n,t),e(n,r),e(r,w),e(n,m),e(n,c),e(c,d),e(d,y),e(n,f),e(n,a),e(a,s),e(s,g)},p:O,i:O,o:O,d(u){u&&o(n)}}}class q extends E{constructor(n){super(),D(this,n,null,C,x,{})}}export{q as default};
+            That all is well`),B.forEach(o),A.forEach(o),i.forEach(o),this.h()},h(){w(a,"class","svelte-bs197z"),w(t,"class","svelte-bs197z"),w(l,"class","poemtext"),w(s,"class","poem")},m(u,i){x(u,n,i),e(n,t),e(t,y),e(t,a),e(a,d),e(d,m),e(n,f),e(n,s),e(s,l),e(l,g)},p:O,i:O,o:O,d(u){u&&o(n)}}}class z extends I{constructor(n){super(),Y(this,n,null,S,W,{})}}export{z as default};

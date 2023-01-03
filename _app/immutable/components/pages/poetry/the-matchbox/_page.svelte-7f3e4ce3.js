@@ -1,4 +1,4 @@
-import{S as v,i as I,s as _,k as i,q as p,a as k,l,m as d,r as b,h,c as B,n as g,b as O,G as o,B as u}from"../../../../chunks/index-14cc5f3c.js";/* empty css                              */function x(T){let n,s,m,c,e,a,w;return{c(){n=i("body"),s=i("h1"),m=p("The Matchbox"),c=k(),e=i("div"),a=i("div"),w=p(`The man wears
+import{S as v,i as _,s as k,k as i,q as F,a as B,l,m as d,r as T,h as r,c as I,n as p,b as O,G as o,B as u}from"../../../../chunks/index-14cc5f3c.js";/* empty css                              */function x(b){let n,s,m,c,e,a,w;return{c(){n=i("body"),s=i("h1"),m=F("The Matchbox"),c=B(),e=i("div"),a=i("div"),w=F(`The man wears
             Leather boots
             Caked with mud
             From years past
@@ -8,7 +8,7 @@ import{S as v,i as I,s as _,k as i,q as p,a as k,l,m as d,r as b,h,c as B,n as g
             On hot coals
             In the stove
             
-            In the smoke
+            Through the smoke
             The embers
             Fall and fail
             Raining ash
@@ -51,7 +51,7 @@ import{S as v,i as I,s as _,k as i,q as p,a as k,l,m as d,r as b,h,c as B,n as g
             Over the sea
             Towards the sky
             Following
-            The north star`),this.h()},l(r){n=l(r,"BODY",{});var t=d(n);s=l(t,"H1",{});var f=d(s);m=b(f,"The Matchbox"),f.forEach(h),c=B(t),e=l(t,"DIV",{class:!0});var y=d(e);a=l(y,"DIV",{class:!0});var F=d(a);w=b(F,`The man wears
+            The north star`),this.h()},l(h){n=l(h,"BODY",{});var t=d(n);s=l(t,"H1",{});var f=d(s);m=T(f,"The Matchbox"),f.forEach(r),c=I(t),e=l(t,"DIV",{class:!0});var y=d(e);a=l(y,"DIV",{class:!0});var g=d(a);w=T(g,`The man wears
             Leather boots
             Caked with mud
             From years past
@@ -61,7 +61,7 @@ import{S as v,i as I,s as _,k as i,q as p,a as k,l,m as d,r as b,h,c as B,n as g
             On hot coals
             In the stove
             
-            In the smoke
+            Through the smoke
             The embers
             Fall and fail
             Raining ash
@@ -104,4 +104,4 @@ import{S as v,i as I,s as _,k as i,q as p,a as k,l,m as d,r as b,h,c as B,n as g
             Over the sea
             Towards the sky
             Following
-            The north star`),F.forEach(h),y.forEach(h),t.forEach(h),this.h()},h(){g(a,"class","poemtext"),g(e,"class","poem")},m(r,t){O(r,n,t),o(n,s),o(s,m),o(n,c),o(n,e),o(e,a),o(a,w)},p:u,i:u,o:u,d(r){r&&h(n)}}}class S extends v{constructor(n){super(),I(this,n,null,x,_,{})}}export{S as default};
+            The north star`),g.forEach(r),y.forEach(r),t.forEach(r),this.h()},h(){p(a,"class","poemtext"),p(e,"class","poem")},m(h,t){O(h,n,t),o(n,s),o(s,m),o(n,c),o(n,e),o(e,a),o(a,w)},p:u,i:u,o:u,d(h){h&&r(n)}}}class S extends v{constructor(n){super(),_(this,n,null,x,k,{})}}export{S as default};
