@@ -1,17 +1,18 @@
 <script>
     import '../styles.css'
+    import { base } from "$app/paths";
 </script>
 
 <nav>
     <div class="menu-container">
         <ul class="menu">
             <l1 class="menu-item">
-                <a href="/">
+                <a href="{base}/">
                     <span>code</span>
                 </a>
             </l1>
             <l1 class="menu-item">
-                <a href="/poetry">
+                <a href="{base}/poetry">
                     <span>poetry</span>
                 </a>
             </l1>
