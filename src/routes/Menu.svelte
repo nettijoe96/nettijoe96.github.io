@@ -6,13 +6,19 @@
     <div class="menu-container">
         <ul class="menu">
             <l1 class="menu-item">
-                <a href="/">code</a>
+                <a href="/">
+                    <span>code</span>
+                </a>
             </l1>
             <l1 class="menu-item">
-                <a href="/poetry">poetry</a>
+                <a href="/poetry">
+                    <span>poetry</span>
+                </a>
             </l1>
             <l1 class="menu-item">
-                <a href="https://soundcloud.com/beatniix/tracks">music</a>
+                <a href="https://soundcloud.com/beatniix/tracks">
+                    <span>music</span>
+                </a>
             </l1>
         </ul>
     </div>
@@ -47,15 +53,27 @@
         font-family: 'Inter', sans-serif;
     }
 
+    
     .menu-item {
         margin: 10px 0;
-        padding: 10px 10px; /* space between menu items */
-    }
+        padding: 10px;
+        list-style: none
+    } 
 
     a {
-        color: black;
+        font-weight: 100;
         text-decoration: none;
     }
+
+    span {
+        color: black;
+    }
+
+    span:hover {
+        /* color:  #7010ca; */
+        color: #878787;
+    }
+
 
 </style>
 

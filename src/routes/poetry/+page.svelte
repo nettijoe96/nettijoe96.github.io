@@ -1,5 +1,6 @@
 <script>
     import '../../styles.css'
+	import Menu from '../Menu.svelte';
 
     // orange FFA755
     // purple B694FF
@@ -51,46 +52,55 @@
     ]
 </script>
 
+<Menu></Menu>
 <div>
-    <h1>Poetry</h1>
-
-    {#each poems as {name, route}, i}
-        <h2>
-            <a style="text-decoration:none" href={route}>{name}</a>
-        </h2>
-    {/each}
+    <ul>
+        {#each poems as {name, route}, i}
+            <li>
+                <a href={route}>
+                    <span>{name}</span>
+                </a>
+            </li>
+        {/each}
+    </ul>
 </div>
 
 <style>
-    /* div {
-        background: rgb(255,167,85);
-        background: linear-gradient(180deg, rgba(255,167,85,1) 0%, rgba(182,148,255,1) 50%, rgba(82,204,102,1) 100%);
-    } */
-
-    h1 {
-        font-weight: bold;
-        margin-left: 42.5%;
-        width: 15%;
+    div {
         text-align: center;
-        /* margin-top: 3%; */
-        margin-bottom: 0%;
-        padding-bottom: 1px;
-        border-bottom: 1px solid #eee;
-        border-bottom-color: rgb(238, 238, 238);
-        color: black;
-        font-family: 'Inter', sans-serif;
     }
 
-    h2 {
-        margin-left: 35%;
-        width: 50%;
+    ul {
+        padding: 20px;
+        text-align: left;
+        display: inline-block;
+    }
+
+    li {
+        padding: 5px;
+        /* width: 50%; */
         text-align: left;
         color: black;
         font-family: 'Inter', sans-serif;
+        list-style: none
     }
 
+    /* li:hover {
+        background-color: #B694FF;
+    } */
+
     a {
+        font-weight: 100;
+        text-decoration: none;
+    }
+
+    span {
         color: black;
     }
+
+    span:hover {
+        color: #878787;
+    }
+
 
 </style>
