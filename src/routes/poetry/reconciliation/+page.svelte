@@ -3,8 +3,10 @@
 </script>
 
 <body>
-    <h1>Reconciliation</h1>
-    <p><em>fabrication of a good memory</em></p>
+    <h1>
+        Reconciliation
+        <p><em>fabrication of a good memory</em></p>
+    </h1>
     <div class="poem">
         <div class="poemtext"
             > On nights
@@ -93,3 +95,16 @@
         </div>
     </div>
 </body>
+
+<style>
+    p {
+        margin-top: 1px;
+        margin-bottom: 3px;
+        padding: 0;
+        font-size: small;
+    }
+
+    h1 {
+        padding-bottom: 0;
+    }
+</style>

@@ -16,7 +16,7 @@
             On hot coals
             In the stove
             
-            In the smoke
+            Through the smoke
             The embers
             Fall and fail
             Raining ash
