@@ -5,8 +5,7 @@
     let innerWidth = 0
     let innerHeight = 0
     
-    $: condition = innerWidth*1.33 <= innerHeight
-    $: isMobile = innerWidth <= 344 // TODO
+    $: isMobile = innerWidth*1.33 <= innerHeight
 </script>
 
 
@@ -16,7 +15,11 @@
         <ul class="menu">
             {#if !isMobile}
                 <li class="menu-item img-item">
-                    <img src=/apple-touch-icon.png alt="go icon"/>
+                    <span>
+                        <a href="games">
+                            <img src=/apple-touch-icon.png alt="go icon"/>
+                        </a>
+                    </span>
                 </li>
             {/if}
             <l1 class="menu-item">
