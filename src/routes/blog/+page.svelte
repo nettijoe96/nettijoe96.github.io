@@ -14,11 +14,15 @@
             link: "https://medium.com/@joenetti/zero-sum-schelling-data-oracles-cb9c7105c2c0"
         },
         {
-            name: "Pietrzak Verifiable Delay Functions",
+            name: "Pietrzak VDFs",
             link: "https://medium.com/@joenetti/pietrzak-verifiable-delay-functions-f5683131882b"
         },
         {
-            name: "Blockchain for routing correctness?",
+            name: "Incentivizing full nodes",
+            link: "https://medium.com/@joenetti/incentivizing-full-nodes-through-fastlanes-a-thought-experiment-69b67165b3b4"
+        },
+        {
+            name: "Blockchain and BGP",
             link: "https://github.com/nettijoe96/BM-BGP/blob/master/BM-BGP.pdf"
         },
         {

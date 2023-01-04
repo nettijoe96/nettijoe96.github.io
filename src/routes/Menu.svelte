@@ -23,7 +23,7 @@
                 </a>
             </l1>
             <l1 class="menu-item">
-                <a href="https://soundcloud.com/beatniix/tracks">
+                <a href="{base}/music">
                     <span>music</span>
                 </a>
             </l1>
