@@ -1,17 +1,6 @@
 <script>
     import '../../styles.css'
     import Menu from "../Menu.svelte";
-
-    let music = [
-        {
-            name: "Beatniix: my electronic music",
-            link: "https://soundcloud.com/beatniix/tracks"
-        },
-        {
-            name: "Follow me on Spotify",
-            link: "https://open.spotify.com/user/lp0eon6y1fj7c734mlxpt6nbt?si=6b58aa679baa472f"
-        },
-    ]
 </script>
 
 <Menu></Menu>

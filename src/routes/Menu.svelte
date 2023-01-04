@@ -1,12 +1,24 @@
 <script>
     import '../styles.css'
     import { base } from "$app/paths";
+
+    let innerWidth = 0
+    let innerHeight = 0
+    
+    $: condition = innerWidth*1.33 <= innerHeight
+    $: isMobile = innerWidth <= 344 // TODO
 </script>
 
+
+<svelte:window bind:innerWidth bind:innerHeight />
 <nav>
     <div class="menu-container">
-        <!-- <img src=/apple-touch-icon.png alt="go icon"/> -->
         <ul class="menu">
+            {#if !isMobile}
+                <li class="menu-item img-item">
+                    <img src=/apple-touch-icon.png alt="go icon"/>
+                </li>
+            {/if}
             <l1 class="menu-item">
                 <a href="{base}/">
                     <span>code</span>
@@ -22,20 +34,24 @@
                     <span>poetry</span>
                 </a>
             </l1>
-            <l1 class="menu-item">
-                <a href="{base}/music">
-                    <span>music</span>
-                </a>
-            </l1>
+            {#if isMobile}
+                <l1 class="menu-item">
+                    <a href="{base}/music">
+                        <span>music</span>
+                    </a>
+                </l1>
+            {:else}
+                <l1 class="menu-item last-item">
+                    <a href="{base}/music">
+                        <span>music</span>
+                    </a>
+                </l1>
+            {/if}
         </ul>
     </div>
 </nav>
 
 <style>
-
-    p {
-        display: inline
-    }
 
     img {
         vertical-align: middle;
@@ -44,16 +60,24 @@
         padding: 0;
     }
 
-    .img-item {
-        margin: 0;
-        /* margin: 10px 0; */
+    .menu-item {
+        margin: 10px 0;
         padding: 10px;
+        list-style: none
+    } 
+
+    .img-item {
+        display: inline;
+        margin: 0;
+        width: 50;
+        /* margin: 10px 0; */
+        padding: 5px;
         list-style: none
     }
 
-   /* *, ::before, ::after {
-    box-sizing: border-box;
-   } */
+    .last-item {
+        margin-right: 40px;
+    }
 
     nav {
         margin: 0;
@@ -78,13 +102,6 @@
         font-family: 'Inter', sans-serif;
     }
 
-    
-    .menu-item {
-        margin: 10px 0;
-        padding: 10px;
-        list-style: none
-    } 
-
     a {
         font-weight: 100;
         text-decoration: none;
@@ -95,7 +112,6 @@
     }
 
     span:hover {
-        /* color:  #7010ca; */
         color: #878787;
     }
 
