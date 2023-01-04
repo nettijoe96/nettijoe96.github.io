@@ -1,4 +1,4 @@
-import{S as k,i as v,s as M,k as l,q as b,a as _,l as h,m as d,r as f,h as i,c as x,n as g,b as E,G as r,B as c}from"../../../../chunks/index-14cc5f3c.js";/* empty css                              */function S(H){let e,t,y,u,n,a,m;return{c(){e=l("body"),t=l("h1"),y=b("A boy sits upon a tower"),u=_(),n=l("div"),a=l("div"),m=b(`A boy sits upon a tower
+import{S as k,i as v,s as M,k as l,q as b,a as _,l as h,m as d,r as f,h as i,c as x,n as g,b as S,G as r,B as c}from"../../../../chunks/index-14cc5f3c.js";/* empty css                              */function T(H){let e,o,y,u,n,a,m;return{c(){e=l("body"),o=l("h1"),y=b("A Boy Sits Upon A Tower"),u=_(),n=l("div"),a=l("div"),m=b(`A boy sits upon a tower
             And cries to the sun 
             To the stars
             Alas alas where are you
@@ -48,7 +48,7 @@ import{S as k,i as v,s as M,k as l,q as b,a as _,l as h,m as d,r as f,h as i,c a
             My dear
             Alas alas maiden so fine
             Alas where are you 
-            My dear`),this.h()},l(o){e=h(o,"BODY",{});var s=d(e);t=h(s,"H1",{});var w=d(t);y=f(w,"A boy sits upon a tower"),w.forEach(i),u=x(s),n=h(s,"DIV",{class:!0});var A=d(n);a=h(A,"DIV",{class:!0});var p=d(a);m=f(p,`A boy sits upon a tower
+            My dear`),this.h()},l(t){e=h(t,"BODY",{});var s=d(e);o=h(s,"H1",{});var w=d(o);y=f(w,"A Boy Sits Upon A Tower"),w.forEach(i),u=x(s),n=h(s,"DIV",{class:!0});var A=d(n);a=h(A,"DIV",{class:!0});var p=d(a);m=f(p,`A boy sits upon a tower
             And cries to the sun 
             To the stars
             Alas alas where are you
@@ -98,4 +98,4 @@ import{S as k,i as v,s as M,k as l,q as b,a as _,l as h,m as d,r as f,h as i,c a
             My dear
             Alas alas maiden so fine
             Alas where are you 
-            My dear`),p.forEach(i),A.forEach(i),s.forEach(i),this.h()},h(){g(a,"class","poemtext"),g(n,"class","poem")},m(o,s){E(o,e,s),r(e,t),r(t,y),r(e,u),r(e,n),r(n,a),r(a,m)},p:c,i:c,o:c,d(o){o&&i(e)}}}class F extends k{constructor(e){super(),v(this,e,null,S,M,{})}}export{F as default};
+            My dear`),p.forEach(i),A.forEach(i),s.forEach(i),this.h()},h(){g(a,"class","poemtext"),g(n,"class","poem")},m(t,s){S(t,e,s),r(e,o),r(o,y),r(e,u),r(e,n),r(n,a),r(a,m)},p:c,i:c,o:c,d(t){t&&i(e)}}}class B extends k{constructor(e){super(),v(this,e,null,T,M,{})}}export{B as default};
