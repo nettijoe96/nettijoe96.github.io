@@ -3,7 +3,7 @@
 </script>
 
 <body>
-    <h1>A boy sits upon a tower</h1>
+    <h1>A Boy Sits Upon A Tower</h1>
 
     <div class="poem">
         <div class="poemtext"

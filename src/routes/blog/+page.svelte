@@ -2,9 +2,13 @@
     import '../../styles.css'
     import Menu from "../Menu.svelte";
 
-    let poems = [
+    let blogs = [
         //"nft_link": "TODO",
         //"date": "TODO"
+        {
+            name: "Decentralized Identity Resources",
+            link: "https://github.com/nettijoe96/decentralized-identity-resources"
+        },
         {
             name: "Zero-sum Schelling Data Oracles",
             link: "https://medium.com/@joenetti/zero-sum-schelling-data-oracles-cb9c7105c2c0"
@@ -12,6 +16,10 @@
         {
             name: "Pietrzak Verifiable Delay Functions",
             link: "https://medium.com/@joenetti/pietrzak-verifiable-delay-functions-f5683131882b"
+        },
+        {
+            name: "Blockchain for routing correctness?",
+            link: "https://github.com/nettijoe96/BM-BGP/blob/master/BM-BGP.pdf"
         },
         {
             name: "AI and Human Extinction",
@@ -31,7 +39,7 @@
 <Menu></Menu>
 <div>
     <ul>
-        {#each poems as {name, link}, i}
+        {#each blogs as {name, link}, i}
             <li>
                 <a href={link}>
                     <span>{name}</span>

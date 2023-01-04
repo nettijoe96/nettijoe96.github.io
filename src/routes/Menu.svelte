@@ -5,6 +5,7 @@
 
 <nav>
     <div class="menu-container">
+        <!-- <img src=/apple-touch-icon.png alt="go icon"/> -->
         <ul class="menu">
             <l1 class="menu-item">
                 <a href="{base}/">
@@ -31,6 +32,24 @@
 </nav>
 
 <style>
+
+    p {
+        display: inline
+    }
+
+    img {
+        vertical-align: middle;
+        width: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-item {
+        margin: 0;
+        /* margin: 10px 0; */
+        padding: 10px;
+        list-style: none
+    }
 
    /* *, ::before, ::after {
     box-sizing: border-box;
