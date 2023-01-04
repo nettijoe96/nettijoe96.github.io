@@ -7,4 +7,3 @@ npm run dev  <- run locally
 npm run build <- build production
 npm run deploy <- update deployment
 ```
-
