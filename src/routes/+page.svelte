@@ -81,7 +81,26 @@
                 <h1>About</h1>
             </li>
             <li class="item">
-                <p class="bio">My name is Joe Netti and I am backend software engineer. I am passionate about using improving social media, privacy, governance, identity, and financial access with technology. I love music, poetry, board games, biking, and campfires.</p>
+                <p class="bio">My name is Joe Netti and I am backend software engineer. I am passionate about improving social media, privacy, governance, identity, and financial access with technology. I love music, poetry, board games, biking, and campfires.</p>
+            </li>
+            <li class="item">
+                <h1>Info</h1>
+            </li>
+            <li class="item">
+                <a href="/resume">
+                    <span>
+                        <i class="fa-solid fa-file-lines"></i>
+                        Resume
+                    </span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="https://github.com/nettijoe96">
+                    <span>
+                        <i class="fa-brands fa-github"></i>
+                        Github
+                    </span>
+                </a>
             </li>
             <li class="item">
                 <h1>
@@ -262,6 +281,16 @@
 
     span:hover {
         color: #878787;
+    }
+
+    .fa-github {
+        margin-left: 5px;
+        margin-right: 3px;
+    }
+
+    .fa-file-lines {
+        margin-left: 6px;
+        margin-right: 6px;
     }
 
     .fa-bitcoin {
