@@ -58,28 +58,31 @@
 
 </script>
 
-<svelte:window on:copysuccess={copySuccess} on:copyerror={copyError} bind:innerWidth bind:innerHeight/>
+<svelte:window bind:innerWidth bind:innerHeight on:copysuccess={copySuccess} on:copyerror={copyError}/>
 
 <Menu></Menu>
 <div class={div_class}>
 
     {#if !isMobile}
-        <img class="joe" src="me1.png" alt="Joe"/>
+        <figure>
+            <div class="card">
+                <div class="card_image">
+                    <img class="joe" src="me1.png" alt="Joe"/>
+                    <figcaption>
+                        Joe in front of a brick wall
+                    </figcaption>
+                </div>
+            </div>
+        </figure>
     {/if}
     <div>   
         <ul>
             <li class="item">
-                <h1>
-                    Projects
-                </h1> 
+                <h1>About</h1>
             </li>
-            {#each code as {name, link}, i}
-                <li class="item">
-                    <a href={link}>
-                        <span>{name}</span>
-                    </a>
-                </li>
-            {/each}
+            <li class="item">
+                <p class="bio">My name is Joe Netti and I am backend software engineer. I am passionate about using improving social media, privacy, governance, identity, and financial access with technology. I love music, poetry, board games, biking, and campfires.</p>
+            </li>
             <li class="item">
                 <h1>
                     Tech Stack
@@ -135,19 +138,31 @@
             </li>
             <li class="item">
                 <h1>
+                    Code
+                </h1> 
+            </li>
+            {#each code as {name, link}, i}
+                <li class="item">
+                    <a href={link}>
+                        <span>{name}</span>
+                    </a>
+                </li>
+            {/each}
+            <li class="item">
+                <h1>
                     Crypto
                 </h1> 
             </li>
             <li class="item">
                 <i class="fa-brands fa-ethereum"></i>
-                <p use:clickToCopyWrapper>{eth}</p>
+                <p class="addr" use:clickToCopyWrapper>{eth}</p>
                 {#if eth_copy}
                     <p class="copied">✓</p>
                 {/if}
             </li>
             <li class="item">
                 <i class="fa-brands fa-bitcoin"></i>
-                <p use:clickToCopyWrapper>{btc}</p>
+                <p class="addr" use:clickToCopyWrapper>{btc}</p>
                 {#if btc_copy}
                     <p class="copied">✓</p>
                 {/if}
@@ -174,11 +189,11 @@
         text-align: center;
     }
 
-    .joe {
+    /* .joe {
         margin: 0;
         padding: 20px;
         width: 200px;
-    }
+    } */
 
     ul {
         padding: 20px;
@@ -205,6 +220,11 @@
     a {
         font-weight: 100;
         text-decoration: none;
+    }
+
+    .bio {
+        width: 300px;
+        font-size: medium;
     }
 
     .fa-golang {
@@ -261,17 +281,49 @@
         color: #333333
     }
 
-    p {
+    .addr {
         font-weight: 100;
         font-size: 12px;
     }
 
-    p:hover {
+    .addr:hover {
         color: #878787;
     }
 
     .copied {
         margin-left: 4px;
+    }
+
+    .card {
+        margin-top: 20px;
+        float:left;
+        margin-right: 20px;
+        border-radius: .4rem;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.23),0 1px 3px rgba(0,0,0,0.08),0 6px 12px rgba(0,0,0,0.02);
+        -webkit-transition: box-shadow .1s ease-in-out;
+        transition: box-shadow .1s ease-in-out;
+    }
+
+    .card > :last-child {
+        border-bottom-right-radius: .4rem;
+        border-bottom-left-radius: .4rem;
+    }
+    .card > :first-child {
+        border-top-left-radius: .4rem;
+        border-top-right-radius: .4rem;
+    }
+    .card_image {
+        position: relative;
+    }
+    .card_image > img {
+        width: 200px;
+        display: block;
+        height: auto;
+        border-radius: inherit;
+    }
+
+    figcaption {
+        font-size: .85rem;
     }
 
 </style>
