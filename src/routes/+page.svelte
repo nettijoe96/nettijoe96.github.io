@@ -56,139 +56,150 @@
         clickToCopy(node, target)
     }
 
+    function preload(src) {
+        return new Promise(function(resolve) {
+            let img = new Image()
+            img.onload = resolve
+            img.src = src
+        })
+    }
+
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight on:copysuccess={copySuccess} on:copyerror={copyError}/>
 
-<Menu></Menu>
-<div class={div_class}>
-
-    {#if !isMobile}
-        <figure>
-            <div class="card">
-                <div class="card_image">
-                    <img class="joe" src="me1.png" alt="Joe"/>
-                    <figcaption>
-                        Joe in front of a brick wall
-                    </figcaption>
-                </div>
+{#if innerWidth != 0}
+    <Menu></Menu>
+    {#await preload("me1.png") then _}
+        <div class={div_class}>
+            {#if !isMobile}
+                    <figure>
+                        <div class="card">
+                            <div class="card_image">
+                                <img class="joe" src="me1.png" alt="Joe"/>
+                                <figcaption>
+                                    Joe in front of a brick wall
+                                </figcaption>
+                            </div>
+                        </div>
+                    </figure>
+            {/if}
+            <div>   
+                <ul>
+                    <li class="item">
+                        <h1>About</h1>
+                    </li>
+                    <li class="item">
+                        <p class="bio">My name is Joe Netti and I am backend software engineer. I am passionate about improving social media, privacy, governance, identity, and financial access with technology. I love music, poetry, campfires, biking and board games.</p>
+                    </li>
+                    <li class="item">
+                        <h1>Info</h1>
+                    </li>
+                    <li class="item">
+                        <a href="/resume">
+                            <span>
+                                <i class="fa-solid fa-file-lines"></i>
+                                Resume
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://github.com/nettijoe96">
+                            <span>
+                                <i class="fa-brands fa-github"></i>
+                                Github
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <h1>
+                            Tech Stack
+                        </h1> 
+                    </li>
+                    <li class="item">
+                        <a href={"https://go.dev/doc/effective_go"}>
+                            <i class="fa-brands fa-golang"></i>
+                            <span>
+                                Golang
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href={"https://svelte.dev/tutorial/basics"}>
+                            <img class="svelte" src="svelte_red.jpg" alt="svelte icon"/>
+                            <span>
+                                Svelte/Sveltekit
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href={"https://docs.docker.com/reference/"}>
+                            <i class="fa-brands fa-docker"></i>
+                            <span>
+                                Docker
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href={"https://docs.docker.com/reference/"}>
+                            <i class="fa-solid fa-dharmachakra"></i>
+                            <span>
+                                Kubernetes
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href={"https://docs.python.org/3.12/library/index.html"}>
+                            <i class="fa-brands fa-python"></i>
+                            <span>
+                                Python
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href={"https://docs.python.org/3.12/library/index.html"}>
+                            <img class="scala" src="scala.png" alt="scala icon"/>
+                            <span>
+                                Scala
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <h1>
+                            Code
+                        </h1> 
+                    </li>
+                    {#each code as {name, link}, i}
+                        <li class="item">
+                            <a href={link}>
+                                <span>{name}</span>
+                            </a>
+                        </li>
+                    {/each}
+                    <li class="item">
+                        <h1>
+                            Crypto
+                        </h1> 
+                    </li>
+                    <li class="item">
+                        <i class="fa-brands fa-ethereum"></i>
+                        <p class="addr" use:clickToCopyWrapper>{eth}</p>
+                        {#if eth_copy}
+                            <p class="copied">✓</p>
+                        {/if}
+                    </li>
+                    <li class="item">
+                        <i class="fa-brands fa-bitcoin"></i>
+                        <p class="addr" use:clickToCopyWrapper>{btc}</p>
+                        {#if btc_copy}
+                            <p class="copied">✓</p>
+                        {/if}
+                    </li>
+                </ul>
             </div>
-        </figure>
-    {/if}
-    <div>   
-        <ul>
-            <li class="item">
-                <h1>About</h1>
-            </li>
-            <li class="item">
-                <p class="bio">My name is Joe Netti and I am backend software engineer. I am passionate about improving social media, privacy, governance, identity, and financial access with technology. I love music, poetry, board games, biking, and campfires.</p>
-            </li>
-            <li class="item">
-                <h1>Info</h1>
-            </li>
-            <li class="item">
-                <a href="/resume">
-                    <span>
-                        <i class="fa-solid fa-file-lines"></i>
-                        Resume
-                    </span>
-                </a>
-            </li>
-            <li class="item">
-                <a href="https://github.com/nettijoe96">
-                    <span>
-                        <i class="fa-brands fa-github"></i>
-                        Github
-                    </span>
-                </a>
-            </li>
-            <li class="item">
-                <h1>
-                    Tech Stack
-                </h1> 
-            </li>
-            <li class="item">
-                <a href={"https://go.dev/doc/effective_go"}>
-                    <i class="fa-brands fa-golang"></i>
-                    <span>
-                        Golang
-                    </span>
-                </a>
-            </li>
-            <li class="item">
-                <a href={"https://svelte.dev/tutorial/basics"}>
-                    <img class="svelte" src="svelte_red.jpg" alt="svelte icon"/>
-                    <span>
-                        Svelte/Sveltekit
-                    </span>
-                </a>
-            </li>
-            <li class="item">
-                <a href={"https://docs.docker.com/reference/"}>
-                    <i class="fa-brands fa-docker"></i>
-                    <span>
-                        Docker
-                    </span>
-                </a>
-            </li>
-            <li class="item">
-                <a href={"https://docs.docker.com/reference/"}>
-                    <i class="fa-solid fa-dharmachakra"></i>
-                    <span>
-                        Kubernetes
-                    </span>
-                </a>
-            </li>
-            <li class="item">
-                <a href={"https://docs.python.org/3.12/library/index.html"}>
-                    <i class="fa-brands fa-python"></i>
-                    <span>
-                        Python
-                    </span>
-                </a>
-            </li>
-            <li class="item">
-                <a href={"https://docs.python.org/3.12/library/index.html"}>
-                    <img class="scala" src="scala.png" alt="scala icon"/>
-                    <span>
-                        Scala
-                    </span>
-                </a>
-            </li>
-            <li class="item">
-                <h1>
-                    Code
-                </h1> 
-            </li>
-            {#each code as {name, link}, i}
-                <li class="item">
-                    <a href={link}>
-                        <span>{name}</span>
-                    </a>
-                </li>
-            {/each}
-            <li class="item">
-                <h1>
-                    Crypto
-                </h1> 
-            </li>
-            <li class="item">
-                <i class="fa-brands fa-ethereum"></i>
-                <p class="addr" use:clickToCopyWrapper>{eth}</p>
-                {#if eth_copy}
-                    <p class="copied">✓</p>
-                {/if}
-            </li>
-            <li class="item">
-                <i class="fa-brands fa-bitcoin"></i>
-                <p class="addr" use:clickToCopyWrapper>{btc}</p>
-                {#if btc_copy}
-                    <p class="copied">✓</p>
-                {/if}
-            </li>
-        </ul>
-    </div>
-</div>
+        </div>
+    {/await}
+{/if}
 
 <style>
 
