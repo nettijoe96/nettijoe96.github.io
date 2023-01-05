@@ -25,8 +25,6 @@
     </ul>
 </div>
 
-
-
 <style>
 
     .fa-soundcloud {
@@ -58,10 +56,6 @@
         font-family: 'Inter', sans-serif;
         list-style: none
     }
-
-    /* li:hover {
-        background-color: #B694FF;
-    } */
 
     a {
         font-weight: 100;

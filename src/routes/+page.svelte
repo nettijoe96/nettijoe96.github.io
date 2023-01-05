@@ -130,7 +130,7 @@
             </li>
             <li class="item">
                 <a href={"https://docs.python.org/3.12/library/index.html"}>
-                    <img class="scala" src="scala2.png" alt="scala icon"/>
+                    <img class="scala" src="scala.png" alt="scala icon"/>
                     <span>
                         Scala
                     </span>
@@ -188,12 +188,6 @@
     .div-mobile {
         text-align: center;
     }
-
-    /* .joe {
-        margin: 0;
-        padding: 20px;
-        width: 200px;
-    } */
 
     ul {
         padding: 20px;
@@ -324,6 +318,11 @@
 
     figcaption {
         font-size: .85rem;
+    }
+
+    .email {
+        text-decoration: none;
+        color: black;
     }
 
 </style>

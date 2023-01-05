@@ -3,8 +3,6 @@
     import Menu from "../Menu.svelte";
 
     let blogs = [
-        //"nft_link": "TODO",
-        //"date": "TODO"
         {
             name: "Decentralized Identity Resources",
             link: "https://github.com/nettijoe96/decentralized-identity-resources"

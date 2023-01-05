@@ -3,10 +3,6 @@
 	import Menu from '../Menu.svelte';
     import { base } from "$app/paths";
 
-    // orange FFA755
-    // purple B694FF
-    // green 52CC66
-
     let poems = [
         //"nft_link": "TODO",
         //"date": "TODO"

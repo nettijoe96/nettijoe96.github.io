@@ -18,15 +18,12 @@
             <a href="https://www.chess.com/member/ts4b9g1cyoh9">
                 <span>    
                     <i class="fa-solid fa-chess"></i>
-                    <!-- <i class="fa-solid fa-chess-board"></i> -->
                     Play me in Chess
                 </span>
             </a>
         </li>
     </ul>
 </div>
-
-
 
 <style>
 
@@ -57,10 +54,6 @@
         font-family: 'Inter', sans-serif;
         list-style: none
     }
-
-    /* li:hover {
-        background-color: #B694FF;
-    } */
 
     a {
         font-weight: 100;
