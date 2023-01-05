@@ -19,7 +19,7 @@
                 <span>    
                     <i class="fa-solid fa-chess"></i>
                     <!-- <i class="fa-solid fa-chess-board"></i> -->
-                    Play me in chess
+                    Play me in Chess
                 </span>
             </a>
         </li>
