@@ -11,10 +11,10 @@ import{S as ce,i as fe,s as ve,k as r,q as t,a as Ee,l,m as d,r as o,h as s,c as
             Pace the world, `),y=r("em"),S=t("face"),Y=t(` the world
             Change: be em`),_=r("em"),j=t("braced"),q=t(`
             Phased: no `),u=r("em"),B=t("way"),L=t(`-(fuck it)
-            Hazed: I `),p=r("em"),R=t("swear"),T=t(` ...
+            Hazed: I `),p=r("em"),R=t("swear"),T=t(` --
             
             Leave me to `),w=r("em"),V=t("dry"),W=t(`.
-            Heave a sigh of `),b=r("em"),G=t("relief"),O=t(` ... 
+            Heave a sigh of `),b=r("em"),G=t("relief"),O=t(` ...
             An open heart for `),g=r("em"),J=t("belief"),K=t(` 
             and `),k=r("em"),N=t("beneath"),Q=t(` the sky
             Falls an open door
@@ -33,10 +33,10 @@ import{S as ce,i as fe,s as ve,k as r,q as t,a as Ee,l,m as d,r as o,h as s,c as
             Pace the world, `),y=l(n,"EM",{});var te=d(y);S=o(te,"face"),te.forEach(s),Y=o(n,` the world
             Change: be em`),_=l(n,"EM",{});var oe=d(_);j=o(oe,"braced"),oe.forEach(s),q=o(n,`
             Phased: no `),u=l(n,"EM",{});var se=d(u);B=o(se,"way"),se.forEach(s),L=o(n,`-(fuck it)
-            Hazed: I `),p=l(n,"EM",{});var re=d(p);R=o(re,"swear"),re.forEach(s),T=o(n,` ...
+            Hazed: I `),p=l(n,"EM",{});var re=d(p);R=o(re,"swear"),re.forEach(s),T=o(n,` --
             
             Leave me to `),w=l(n,"EM",{});var le=d(w);V=o(le,"dry"),le.forEach(s),W=o(n,`.
-            Heave a sigh of `),b=l(n,"EM",{});var de=d(b);G=o(de,"relief"),de.forEach(s),O=o(n,` ... 
+            Heave a sigh of `),b=l(n,"EM",{});var de=d(b);G=o(de,"relief"),de.forEach(s),O=o(n,` ...
             An open heart for `),g=l(n,"EM",{});var ie=d(g);J=o(ie,"belief"),ie.forEach(s),K=o(n,` 
             and `),k=l(n,"EM",{});var me=d(k);N=o(me,"beneath"),me.forEach(s),Q=o(n,` the sky
             Falls an open door
