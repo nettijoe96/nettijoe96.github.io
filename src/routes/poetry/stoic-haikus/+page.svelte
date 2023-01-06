@@ -3,7 +3,7 @@
 </script>
 
 <body>
-    <h1>Stoic Haikus</h1>
+    <h1 class="title">Stoic Haikus</h1>
     <div class="poem">
         <div class="poemtext"
             > Take what's for granted.                     

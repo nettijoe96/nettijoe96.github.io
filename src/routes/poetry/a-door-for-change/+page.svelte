@@ -3,7 +3,7 @@
 </script>
 
 <body>
-    <h1>A Door For Change</h1>
+    <h1 class="title">A Door For Change</h1>
     <div class="poem">
         <div class="poemtext"
             > In my kingdom of lead

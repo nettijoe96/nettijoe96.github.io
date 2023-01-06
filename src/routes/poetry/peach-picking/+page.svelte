@@ -3,7 +3,7 @@
 </script>
 
 <body>
-    <h1>Peach Picking</h1>
+    <h1 class="title">Peach Picking</h1>
     <div class="poem">
         <div class="poemtext"
             > We wrap ourselves

@@ -7,16 +7,32 @@
         //"nft_link": "TODO",
         //"date": "TODO"
         {
-            name: "A Boy Sits Upon A Tower",
-            route: "poetry/a-boy-sits-upon-a-tower"
+            name: "Stoic Haikus",
+            route: "poetry/stoic-haikus"
+        },
+        {
+            name: "Back!",
+            route: "poetry/back!"
         },
         {
             name: "A Door For Change",
             route: "poetry/a-door-for-change"
         },
         {
-            name: "Back!",
-            route: "poetry/back!"
+            name: "The Matchbox",
+            route: "poetry/the-matchbox"
+        },
+        {
+            name: "To Dance",
+            route: "poetry/to-dance"
+        },
+        {
+            name: "Reconciliation",
+            route: "poetry/reconciliation"
+        },
+        {
+            name: "Peach Picking",
+            route: "poetry/peach-picking"
         },
         {
             name: "Forgive",
@@ -26,26 +42,6 @@
             name: "Home",
             route: "poetry/home"
         },
-        {
-            name: "Peach Picking",
-            route: "poetry/peach-picking"
-        },
-        {
-            name: "Reconciliation",
-            route: "poetry/reconciliation"
-        },
-        {
-            name: "Stoic Haikus",
-            route: "poetry/stoic-haikus"
-        },
-        {
-            name: "The Matchbox",
-            route: "poetry/the-matchbox"
-        },
-        {
-            name: "To Dance",
-            route: "poetry/to-dance"
-        }
     ]
 </script>
 

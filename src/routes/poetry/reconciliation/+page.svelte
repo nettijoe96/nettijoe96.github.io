@@ -3,7 +3,7 @@
 </script>
 
 <body>
-    <h1>
+    <h1 class="title">
         Reconciliation
         <p><em>fabrication of a good memory</em></p>
     </h1>

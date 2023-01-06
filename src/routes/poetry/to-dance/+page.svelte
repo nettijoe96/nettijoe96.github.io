@@ -3,7 +3,7 @@
 </script>
 
 <body>
-    <h1>To Dance</h1>
+    <h1 class="title">To Dance</h1>
     <div class="poem">
         <div class="poemtext"
         > Light into black
