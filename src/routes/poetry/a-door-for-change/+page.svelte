@@ -19,10 +19,10 @@
             Pace the world, <em>face</em> the world
             Change: be em<em>braced</em>
             Phased: no <em>way</em>-(fuck it)
-            Hazed: I <em>swear</em> ...
+            Hazed: I <em>swear</em> --
             
             Leave me to <em>dry</em>.
-            Heave a sigh of <em>relief</em> ... 
+            Heave a sigh of <em>relief</em> ...
             An open heart for <em>belief</em> 
             and <em>beneath</em> the sky
             Falls an open door

@@ -16,7 +16,7 @@
             
             Looking for the gold.                               
             Only the silver appears                          
-            Better anyways.    
+            Better anyways    
         </div>
     </div>
 </body>  
