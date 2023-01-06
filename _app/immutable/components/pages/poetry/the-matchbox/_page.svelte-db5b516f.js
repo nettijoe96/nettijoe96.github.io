@@ -1,4 +1,4 @@
-import{S as v,i as _,s as k,k as i,q as F,a as B,l,m as d,r as T,h as r,c as I,n as p,b as O,G as o,B as u}from"../../../../chunks/index-a31e140d.js";/* empty css                              */function x(b){let n,s,m,c,e,a,w;return{c(){n=i("body"),s=i("h1"),m=F("The Matchbox"),c=B(),e=i("div"),a=i("div"),w=F(`The man wears
+import{S as v,i as _,s as k,k as i,q as T,a as B,l,m as d,r as p,h as r,c as I,n as u,b as O,G as s,B as f}from"../../../../chunks/index-a31e140d.js";/* empty css                              */function x(b){let n,e,m,c,a,t,w;return{c(){n=i("body"),e=i("h1"),m=T("The Matchbox"),c=B(),a=i("div"),t=i("div"),w=T(`The man wears
             Leather boots
             Caked with mud
             From years past
@@ -51,7 +51,7 @@ import{S as v,i as _,s as k,k as i,q as F,a as B,l,m as d,r as T,h as r,c as I,n
             Over the sea
             Towards the sky
             Following
-            The north star`),this.h()},l(h){n=l(h,"BODY",{});var t=d(n);s=l(t,"H1",{});var f=d(s);m=T(f,"The Matchbox"),f.forEach(r),c=I(t),e=l(t,"DIV",{class:!0});var y=d(e);a=l(y,"DIV",{class:!0});var g=d(a);w=T(g,`The man wears
+            The north star`),this.h()},l(h){n=l(h,"BODY",{});var o=d(n);e=l(o,"H1",{class:!0});var y=d(e);m=p(y,"The Matchbox"),y.forEach(r),c=I(o),a=l(o,"DIV",{class:!0});var g=d(a);t=l(g,"DIV",{class:!0});var F=d(t);w=p(F,`The man wears
             Leather boots
             Caked with mud
             From years past
@@ -104,4 +104,4 @@ import{S as v,i as _,s as k,k as i,q as F,a as B,l,m as d,r as T,h as r,c as I,n
             Over the sea
             Towards the sky
             Following
-            The north star`),g.forEach(r),y.forEach(r),t.forEach(r),this.h()},h(){p(a,"class","poemtext"),p(e,"class","poem")},m(h,t){O(h,n,t),o(n,s),o(s,m),o(n,c),o(n,e),o(e,a),o(a,w)},p:u,i:u,o:u,d(h){h&&r(n)}}}class S extends v{constructor(n){super(),_(this,n,null,x,k,{})}}export{S as default};
+            The north star`),F.forEach(r),g.forEach(r),o.forEach(r),this.h()},h(){u(e,"class","title"),u(t,"class","poemtext"),u(a,"class","poem")},m(h,o){O(h,n,o),s(n,e),s(e,m),s(n,c),s(n,a),s(a,t),s(t,w)},p:f,i:f,o:f,d(h){h&&r(n)}}}class S extends v{constructor(n){super(),_(this,n,null,x,k,{})}}export{S as default};

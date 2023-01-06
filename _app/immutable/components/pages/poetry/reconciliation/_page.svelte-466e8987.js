@@ -164,4 +164,4 @@ import{S as I,i as Y,s as W,k as h,q as k,a as E,l as r,m as c,r as v,h as o,c a
             No other day
             The world has nothing
             With you but to say
-            That all is well`),B.forEach(o),A.forEach(o),i.forEach(o),this.h()},h(){w(a,"class","svelte-bs197z"),w(t,"class","svelte-bs197z"),w(l,"class","poemtext"),w(s,"class","poem")},m(u,i){x(u,n,i),e(n,t),e(t,y),e(t,a),e(a,d),e(d,m),e(n,f),e(n,s),e(s,l),e(l,g)},p:O,i:O,o:O,d(u){u&&o(n)}}}class z extends I{constructor(n){super(),Y(this,n,null,S,W,{})}}export{z as default};
+            That all is well`),B.forEach(o),A.forEach(o),i.forEach(o),this.h()},h(){w(a,"class","svelte-bs197z"),w(t,"class","title svelte-bs197z"),w(l,"class","poemtext"),w(s,"class","poem")},m(u,i){x(u,n,i),e(n,t),e(t,y),e(t,a),e(a,d),e(d,m),e(n,f),e(n,s),e(s,l),e(l,g)},p:O,i:O,o:O,d(u){u&&o(n)}}}class z extends I{constructor(n){super(),Y(this,n,null,S,W,{})}}export{z as default};
