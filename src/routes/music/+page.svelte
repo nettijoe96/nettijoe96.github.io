@@ -19,40 +19,40 @@
 <svelte:window bind:innerWidth bind:innerHeight/>
 
 {#if innerWidth != 0}
-    <Menu></Menu>
-    <div class="top-div">
-        {#if isMobile}
-            <div class="top-div-mobile">
-                <ul>
-                    <li>
-                        <figure>
-                            <div class="card-mobile">
-                                <div class="card_image">
-                                    <img src="music.png" alt="record player and midi piano"/>
+    {#await preload("music.png") then _}
+        <Menu></Menu>
+        <div class="top-div">
+            {#if isMobile}
+                <div class="top-div-mobile">
+                    <ul>
+                        <li>
+                            <figure>
+                                <div class="card-mobile">
+                                    <div class="card_image">
+                                        <img src="music.png" alt="record player and midi piano"/>
+                                    </div>
                                 </div>
-                            </div>
-                        </figure>
-                    </li>
-                    <li>
-                        <a href="https://soundcloud.com/beatniix/tracks">
-                            <span>    
-                                <i class="fa fa-soundcloud" aria-hidden="true"></i> 
-                                Beatniix: my electronic music
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://open.spotify.com/user/lp0eon6y1fj7c734mlxpt6nbt?si=6b58aa679baa472f">
-                            <span>    
-                                <i class="fa fa-spotify" aria-hidden="true"></i> 
-                                Follow me on Spotify!
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        {:else}
-            {#await preload("me1.png") then _}
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="https://soundcloud.com/beatniix/tracks">
+                                <span>    
+                                    <i class="fa fa-soundcloud" aria-hidden="true"></i> 
+                                    Beatniix: my electronic music
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/user/lp0eon6y1fj7c734mlxpt6nbt?si=6b58aa679baa472f">
+                                <span>    
+                                    <i class="fa fa-spotify" aria-hidden="true"></i> 
+                                    Follow me on Spotify!
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            {:else}
                 <div class="top-div-web">
                     <div class="fig">
                         <figure>
@@ -82,9 +82,9 @@
                         </div>
                     </div>
                 </div>
-            {/await}
-        {/if}
-    </div>
+            {/if}
+        </div>
+    {/await}
 {/if}
 
 <style>
