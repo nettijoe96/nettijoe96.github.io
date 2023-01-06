@@ -41,9 +41,3 @@
         </div>
     </div>
 </body>
-
-<style>
-    .poem {
-        text-align: center;
-    }
-</style>

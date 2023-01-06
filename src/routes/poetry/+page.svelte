@@ -78,10 +78,6 @@
         list-style: none
     }
 
-    /* li:hover {
-        background-color: #B694FF;
-    } */
-
     a {
         font-weight: 100;
         text-decoration: none;

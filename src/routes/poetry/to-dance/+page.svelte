@@ -8,9 +8,10 @@
         <div class="poemtext"
         > Light into black
         Black to light.
-        It's <em>all</em>, we ever needed
-        Ever needed 
-        To dance, tonight
+        It's <em>all</em>
+        We ever needed
+        Ever needed to dance
+        Tonight
         It's all we needed.
         Combining 3 
         to 1 ...
@@ -20,3 +21,9 @@
         </div>
     </div>
 </body>
+
+<style>
+    .poemtext {
+        text-align: left;
+    }
+</style>
