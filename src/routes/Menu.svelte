@@ -10,49 +10,52 @@
 
 
 <svelte:window bind:innerWidth bind:innerHeight />
-<nav>
-    <div class="menu-container">
-        <ul class="menu">
-            {#if !isMobile}
-                <li class="menu-item img-item">
-                    <span>
-                        <a href="games">
-                            <img src=/apple-touch-icon.png alt="go icon"/>
-                        </a>
-                    </span>
-                </li>
-            {/if}
-            <l1 class="menu-item">
-                <a href="{base}/">
-                    <span>code</span>
-                </a>
-            </l1>
-            <l1 class="menu-item">
-                <a href="{base}/blog">
-                    <span>blog</span>
-                </a>
-            </l1>
-            <l1 class="menu-item">
-                <a href="{base}/poetry">
-                    <span>poetry</span>
-                </a>
-            </l1>
-            {#if isMobile}
+
+{#if innerWidth != 0}
+    <nav>
+        <div class="menu-container">
+            <ul class="menu">
+                {#if !isMobile}
+                    <li class="menu-item img-item">
+                        <span>
+                            <a href="games">
+                                <img src=/apple-touch-icon.png alt="go icon"/>
+                            </a>
+                        </span>
+                    </li>
+                {/if}
                 <l1 class="menu-item">
-                    <a href="{base}/music">
-                        <span>music</span>
+                    <a href="{base}/">
+                        <span>code</span>
                     </a>
                 </l1>
-            {:else}
-                <l1 class="menu-item last-item">
-                    <a href="{base}/music">
-                        <span>music</span>
+                <l1 class="menu-item">
+                    <a href="{base}/blog">
+                        <span>blog</span>
                     </a>
                 </l1>
-            {/if}
-        </ul>
-    </div>
-</nav>
+                <l1 class="menu-item">
+                    <a href="{base}/poetry">
+                        <span>poetry</span>
+                    </a>
+                </l1>
+                {#if isMobile}
+                    <l1 class="menu-item">
+                        <a href="{base}/music">
+                            <span>music</span>
+                        </a>
+                    </l1>
+                {:else}
+                    <l1 class="menu-item last-item">
+                        <a href="{base}/music">
+                            <span>music</span>
+                        </a>
+                    </l1>
+                {/if}
+            </ul>
+        </div>
+    </nav>
+{/if}
 
 <style>
 

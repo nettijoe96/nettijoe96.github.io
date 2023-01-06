@@ -317,7 +317,7 @@
 
     .addr {
         font-weight: 100;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .addr:hover {
@@ -325,7 +325,8 @@
     }
 
     .copied {
-        margin-left: 4px;
+        font-size: 12px;
+        margin-left: 6px;
     }
 
     .card {
