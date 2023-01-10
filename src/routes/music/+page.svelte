@@ -5,7 +5,7 @@
     let innerWidth = 0
     let innerHeight = 0
     
-    $: isMobile = innerWidth*1.33 <= innerHeight
+    $: isMobile = innerWidth <= 500
 
     function preload(src) {
         return new Promise(function(resolve) {
@@ -19,8 +19,8 @@
 <svelte:window bind:innerWidth bind:innerHeight/>
 
 {#if innerWidth != 0}
+    <Menu></Menu>
     {#await preload("music.png") then _}
-        <Menu></Menu>
         <div class="top-div">
             {#if isMobile}
                 <div class="top-div-mobile">
@@ -28,7 +28,7 @@
                         <li>
                             <figure>
                                 <div class="card-mobile">
-                                    <div class="card_image">
+                                    <div class="card-image">
                                         <img src="music.png" alt="record player and midi piano"/>
                                     </div>
                                 </div>
@@ -46,7 +46,23 @@
                             <a href="https://open.spotify.com/user/lp0eon6y1fj7c734mlxpt6nbt?si=6b58aa679baa472f">
                                 <span>    
                                     <i class="fa fa-spotify" aria-hidden="true"></i> 
-                                    Follow me on Spotify!
+                                    Follow me on Spotify
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/artist/0hCWVMGGQnRVfDgmhwLIxq?si=QBOk4nHVTPaxvfEqDhX7BQ">
+                                <span>    
+                                    <i class="fa-solid fa-fish-fins"></i>
+                                    Sakanation: Favorite Musician
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/album/5pLmzFu2ienSbr1SxBJvwB?si=lSo4QedLRXqyW1wwP2_Sqw">
+                                <span>    
+                                    <i class="fa-solid fa-record-vinyl"></i> 
+                                    834.194: Favorite Album
                                 </span>
                             </a>
                         </li>
@@ -57,7 +73,7 @@
                     <div class="fig">
                         <figure>
                             <div class="card-web">
-                                <div class="card_image">
+                                <div class="card-image">
                                     <img src="music.png" alt="record player and midi piano"/>
                                 </div>
                             </div>
@@ -76,7 +92,23 @@
                             <a href="https://open.spotify.com/user/lp0eon6y1fj7c734mlxpt6nbt?si=6b58aa679baa472f">
                                 <span>    
                                     <i class="fa fa-spotify"></i> 
-                                    Follow me on Spotify!
+                                    Follow me on Spotify
+                                </span>
+                            </a>
+                        </div>
+                        <div class="link">
+                            <a href="https://open.spotify.com/artist/0hCWVMGGQnRVfDgmhwLIxq?si=QBOk4nHVTPaxvfEqDhX7BQ">
+                                <span>    
+                                    <i class="fa-solid fa-fish-fins"></i>
+                                    Sakanation: Favorite Musician
+                                </span>
+                            </a>
+                        </div>
+                        <div class="link">
+                            <a href="https://open.spotify.com/album/5pLmzFu2ienSbr1SxBJvwB?si=lSo4QedLRXqyW1wwP2_Sqw">
+                                <span>    
+                                    <i class="fa-solid fa-record-vinyl"></i> 
+                                    834.194: Favorite Album
                                 </span>
                             </a>
                         </div>
@@ -130,8 +162,8 @@
     }
 
     .fa-soundcloud {
-        margin-right: 5px;
         margin-left: 3px;
+        margin-right: 5px;
         color: #ff551a;
     }
 
@@ -139,6 +171,17 @@
         margin-left: 6px;
         margin-right: 7px;
         color: #1ed760;
+    }
+
+    .fa-fish-fins {
+        margin-left: 5px;
+        margin-right: 5px;
+        color: #025587
+    }
+
+    .fa-record-vinyl {
+        margin-left: 6px;
+        margin-right: 6px;
     }
     
     span {
@@ -152,6 +195,7 @@
 
     figure {
         text-align: center;
+        font-size: .85rem;
     }
 
     .card-mobile {
@@ -162,7 +206,6 @@
         margin-right: 20px;
         margin-bottom: 20px;
         border-radius: .4rem;
-        /* box-shadow: 0 4px 8px rgba(0,0,0,0.23),0 1px 3px rgba(0,0,0,0.08),0 6px 12px rgba(0,0,0,0.02); */
         box-shadow: 0 4px 8px rgba(0,0,0,0.23),0 1px 3px rgba(0,0,0,0.08),0 6px 12px rgba(0,0,0,0.02);
         -webkit-transition: box-shadow .1s ease-in-out;
         transition: box-shadow .1s ease-in-out;
@@ -172,10 +215,8 @@
         width: 200px;
         margin: auto;
         margin-top: 20px;
-        /* float:left; */
         margin-right: 20px;
         border-radius: .4rem;
-        /* box-shadow: 0 4px 8px rgba(0,0,0,0.23),0 1px 3px rgba(0,0,0,0.08),0 6px 12px rgba(0,0,0,0.02); */
         box-shadow: 0 4px 8px rgba(0,0,0,0.23),0 1px 3px rgba(0,0,0,0.08),0 6px 12px rgba(0,0,0,0.02);
         -webkit-transition: box-shadow .1s ease-in-out;
         transition: box-shadow .1s ease-in-out;
@@ -199,13 +240,13 @@
         border-top-right-radius: .4rem;
     }
 
-    .card_image > img {
+    .card-image > img {
         width: 200px;
         display: block;
         height: auto;
         border-radius: inherit;
     }
-    .card_image {
+    .card-image {
         position: relative;
         text-align: center;
     }

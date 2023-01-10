@@ -34,7 +34,7 @@
     let innerWidth = 0
     let innerHeight = 0
     
-    $: isMobile = innerWidth*1.33 <= innerHeight
+    $: isMobile = innerWidth <= 500
     $: div_class = (isMobile) ? "div-mobile" : "div-web"
 
     let text = '';
