@@ -182,6 +182,7 @@
     .fa-record-vinyl {
         margin-left: 6px;
         margin-right: 6px;
+        color: black;
     }
     
     span {
