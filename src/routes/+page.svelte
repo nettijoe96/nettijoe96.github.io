@@ -5,6 +5,10 @@
 
     let code = [
         {
+            name: "go bloom filter package",
+            link: "https://github.com/nettijoe96/bloom"
+        },
+        {
             name: "sveltekit static website",
             link: "https://github.com/nettijoe96/nettijoe96.github.io"
         },
@@ -90,7 +94,7 @@
                         <h1>About</h1>
                     </li>
                     <li class="item">
-                        <p class="bio">My name is Joe Netti and I am backend software engineer. I am passionate about improving social media, privacy, governance, identity, and financial access with technology. I love music, poetry, campfires, biking and board games.</p>
+                        <p class="bio">My name is Joe Netti and I am backend software engineer. I am passionate about improving social media, privacy, governance, identity, and financial access with technology. I love music, poetry, biking and board games.</p>
                     </li>
                     <li class="item">
                         <h1>Info</h1>
@@ -118,49 +122,49 @@
                     </li>
                     <li class="item">
                         <a href={"https://go.dev/doc/effective_go"}>
-                            <i class="fa-brands fa-golang"></i>
                             <span>
+                                <i class="fa-brands fa-golang"></i>
                                 Golang
                             </span>
                         </a>
                     </li>
                     <li class="item">
-                        <a href={"https://svelte.dev/tutorial/basics"}>
-                            <img class="svelte" src="svelte_red.jpg" alt="svelte icon"/>
-                            <span>
-                                Svelte/Sveltekit
-                            </span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href={"https://docs.docker.com/reference/"}>
-                            <i class="fa-brands fa-docker"></i>
-                            <span>
-                                Docker
-                            </span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href={"https://docs.docker.com/reference/"}>
-                            <i class="fa-solid fa-dharmachakra"></i>
-                            <span>
-                                Kubernetes
-                            </span>
-                        </a>
-                    </li>
-                    <li class="item">
                         <a href={"https://docs.python.org/3.12/library/index.html"}>
-                            <i class="fa-brands fa-python"></i>
                             <span>
+                                <i class="fa-brands fa-python"></i>
                                 Python
                             </span>
                         </a>
                     </li>
                     <li class="item">
                         <a href={"https://docs.python.org/3.12/library/index.html"}>
-                            <img class="scala" src="scala.png" alt="scala icon"/>
                             <span>
+                                <img class="scala" src="scala.png" alt="scala icon"/>
                                 Scala
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href={"https://docs.docker.com/reference/"}>
+                            <span>
+                                <i class="fa-brands fa-docker"></i>
+                                Docker
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href={"https://docs.docker.com/reference/"}>
+                            <span>
+                                <i class="fa-solid fa-dharmachakra"></i>
+                                Kubernetes
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href={"https://svelte.dev/tutorial/basics"}>
+                            <span>
+                                <img class="svelte" src="svelte_red.jpg" alt="svelte icon"/>
+                                Svelte/Sveltekit
                             </span>
                         </a>
                     </li>
@@ -257,31 +261,32 @@
     }
 
     .fa-docker {
-        margin-left: 1px;
+        margin-left: 2px;
         color: #2497ed
     }
 
     .fa-dharmachakra {
-        margin-left: 2px;
+        margin-left: 3px;
         margin-right: 3px;
         color: #2e6ce6
     }
 
     .svelte {
         padding-left: 5px;
-        padding-right: 3px;
+        padding-right: 4px;
         width: 13px;
         color: #ff3c00
     }
 
     .fa-python {
-        padding-left: 3px;
+        padding-left: 5px;
         padding-right: 3px;
+        color: #551a8b;
     }
 
     .scala {
-        padding-left: 4px;
-        padding-right: 3px;
+        padding-left: 6px;
+        padding-right: 2px;
         width: 13px;
         color: #ff3c00
     }
@@ -296,12 +301,14 @@
 
     .fa-github {
         margin-left: 5px;
-        margin-right: 3px;
+        margin-right: 1px;
+        color: black;
     }
 
     .fa-file-lines {
-        margin-left: 6px;
-        margin-right: 6px;
+        margin-left: 7px;
+        margin-right: 3px;
+        color: black;
     }
 
     .fa-bitcoin {

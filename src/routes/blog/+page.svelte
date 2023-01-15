@@ -16,6 +16,10 @@
             link: "https://medium.com/@joenetti/pietrzak-verifiable-delay-functions-f5683131882b"
         },
         {
+            name: "Letting a Million Channels Bloom",
+            link: "https://medium.com/blockstream/letting-a-million-channels-bloom-985bdb28660b"
+        },
+        {
             name: "Incentivizing full nodes",
             link: "https://medium.com/@joenetti/incentivizing-full-nodes-through-fastlanes-a-thought-experiment-69b67165b3b4"
         },
