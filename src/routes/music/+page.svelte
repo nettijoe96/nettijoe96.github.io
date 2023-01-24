@@ -14,6 +14,11 @@
             img.src = src
         })
     }
+
+    import { theme } from "$lib/stores.js";
+    $: isLight = $theme === 'light';
+    $: themeClass = isLight ? "light" : "dark"
+
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight/>
@@ -21,7 +26,7 @@
 {#if innerWidth != 0}
     <Menu></Menu>
     {#await preload("music.png") then _}
-        <div class="top-div">
+        <div class="top-div {themeClass}">
             {#if isMobile}
                 <div class="top-div-mobile">
                     <ul>
@@ -121,6 +126,10 @@
 
 <style>
 
+    .top-div {
+        height: 100vh;
+    }
+
     .top-div-web {
         display: flex;
         justify-content: center;
@@ -146,6 +155,7 @@
     a {
         font-weight: 100;
         text-decoration: none;
+        color: inherit;
     }
 
     ul {
@@ -157,7 +167,6 @@
     li {
         padding: 5px;
         text-align: left;
-        color: black;
         list-style: none
     }
 
@@ -182,11 +191,9 @@
     .fa-record-vinyl {
         margin-left: 6px;
         margin-right: 6px;
-        color: black;
     }
     
     span {
-        color: black;
         font-family: 'Inter', sans-serif;
     }
 
@@ -250,6 +257,11 @@
     .card-image {
         position: relative;
         text-align: center;
+    }
+
+    .dark {
+        background-color: black;
+        color: white;
     }
 
 </style>

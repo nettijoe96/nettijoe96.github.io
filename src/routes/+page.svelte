@@ -1,7 +1,11 @@
-<script>
+<script lang="ts">
     import '../styles.css'
     import Menu from "./Menu.svelte";
     import { clickToCopy } from "./clickToCopy.js"
+
+    import { theme } from "$lib/stores.js";
+    $: isLight = $theme === 'light';
+    $: themeClass = isLight ? "light" : "dark"
 
     let code = [
         {
@@ -75,7 +79,7 @@
 {#if innerWidth != 0}
     <Menu></Menu>
     {#await preload("me1.png") then _}
-        <div class={div_class}>
+        <div class="{div_class} {themeClass}">
             {#if !isMobile}
                     <figure>
                         <div class="card">
@@ -248,6 +252,7 @@
     a {
         font-weight: 100;
         text-decoration: none;
+        color: inherit;
     }
 
     .bio {
@@ -291,10 +296,6 @@
         color: #ff3c00
     }
 
-    span {
-        color: black;
-    }
-
     span:hover {
         color: #878787;
     }
@@ -302,13 +303,11 @@
     .fa-github {
         margin-left: 5px;
         margin-right: 1px;
-        color: black;
     }
 
     .fa-file-lines {
         margin-left: 7px;
         margin-right: 3px;
-        color: black;
     }
 
     .fa-bitcoin {
@@ -344,6 +343,8 @@
         box-shadow: 0 4px 8px rgba(0,0,0,0.23),0 1px 3px rgba(0,0,0,0.08),0 6px 12px rgba(0,0,0,0.02);
         -webkit-transition: box-shadow .1s ease-in-out;
         transition: box-shadow .1s ease-in-out;
+        background-color: white;
+        color: black;
     }
 
     .card > :last-child {
@@ -370,7 +371,11 @@
 
     .email {
         text-decoration: none;
-        color: black;
+    }
+
+    .dark {
+        background-color: black;
+        color: white;
     }
 
 </style>

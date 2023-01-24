@@ -40,10 +40,14 @@
             link: "https://steemit.com/science/@brain-man/new-study-shrooms-helps-depression"
         }
     ]
+
+    import { theme } from "$lib/stores.js";
+    $: isLight = $theme === 'light';
+    $: themeClass = isLight ? "light" : "dark"
 </script>
 
 <Menu></Menu>
-<div>
+<div class="{themeClass}">
     <ul>
         {#each blogs as {name, link}, i}
             <li>
@@ -59,6 +63,7 @@
 <style>
     div {
         text-align: center;
+        height: 100vh;
     }
 
     ul {
@@ -71,7 +76,7 @@
         padding: 5px;
         /* width: 50%; */
         text-align: left;
-        color: black;
+        /* color: black; */
         font-family: 'Inter', sans-serif;
         list-style: none
     }
@@ -83,15 +88,16 @@
     a {
         font-weight: 100;
         text-decoration: none;
-    }
-
-    span {
-        color: black;
+        color: inherit;
     }
 
     span:hover {
         color: #878787;
     }
 
+    .dark {
+        background-color: black;
+        color: white;
+    }
 
 </style>

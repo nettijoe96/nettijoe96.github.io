@@ -1,10 +1,14 @@
 <script>
     import '../../styles.css'
     import Menu from "../Menu.svelte";
+
+    import { theme } from "$lib/stores.js";
+    $: isLight = $theme === 'light';
+    $: themeClass = isLight ? "light" : "dark"
 </script>
 
 <Menu></Menu>
-<div>
+<div class="{themeClass}">
     <ul>
         <li>
             <a href="https://online-go.com/player/372785/">
@@ -38,6 +42,7 @@
 
     div {
         text-align: center;
+        height: 100vh;
     }
 
     ul {
@@ -50,7 +55,6 @@
         padding: 5px;
         /* width: 50%; */
         text-align: left;
-        color: black;
         font-family: 'Inter', sans-serif;
         list-style: none
     }
@@ -58,14 +62,16 @@
     a {
         font-weight: 100;
         text-decoration: none;
-    }
-
-    span {
-        color: black;
+        color: inherit;
     }
 
     span:hover {
         color: #878787;
+    }
+
+    .dark {
+        background-color: black;
+        color: white;
     }
 
 </style>

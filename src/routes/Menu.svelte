@@ -1,4 +1,18 @@
-<script>
+<script lang="ts">
+    import { theme } from "$lib/stores.js";
+
+    $: isLight = $theme === 'light';
+    $: themeClass = isLight ? "light" : "dark"
+
+    function toggleMode() {
+        if (isLight) {
+            theme.set("dark")
+        } else {
+
+            theme.set("light")
+        }
+    }
+
     import '../styles.css'
     import { base } from "$app/paths";
 
@@ -13,16 +27,26 @@
 
 {#if innerWidth != 0}
     <nav>
-        <div class="menu-container">
+        <div class="menu-container {themeClass}">
             <ul class="menu">
                 {#if !isMobile}
-                    <li class="menu-item img-item">
-                        <span>
-                            <a href="games">
-                                <img src=/apple-touch-icon.png alt="go icon"/>
-                            </a>
-                        </span>
-                    </li>
+                    {#if isLight}
+                        <li class="menu-item img-item">
+                            <span>
+                                <a href="games">
+                                    <img src=/apple-touch-icon.png alt="go icon"/>
+                                </a>
+                            </span>
+                        </li>
+                    {:else}
+                        <li class="menu-item img-item">
+                            <span>
+                                <a href="games">
+                                    <img src=/negative.png alt="go icon"/>
+                                </a>
+                            </span>
+                        </li>  
+                    {/if}
                 {/if}
                 <l1 class="menu-item">
                     <a href="{base}/">
@@ -39,18 +63,55 @@
                         <span>poetry</span>
                     </a>
                 </l1>
+                <l1 class="menu-item">
+                    <a href="{base}/music">
+                        <span>music</span>
+                    </a>
+                </l1>
                 {#if isMobile}
-                    <l1 class="menu-item">
-                        <a href="{base}/music">
-                            <span>music</span>
-                        </a>
-                    </l1>
+                    { #if isLight }
+                        <l1 class="menu-item">
+                            <button on:click={toggleMode}>
+                                <span>
+                                    <!-- <i class="fa-solid fa-moon"></i> -->
+                                    <i class="fa-solid fa-toggle-off"></i>
+                                </span>
+                            </button>
+                        </l1>
+                    { :else } 
+                        <l1 class="menu-item">
+                            <button on:click={toggleMode}>
+                                <span>
+                                    <!-- <i class="fa-regular fa-sun"></i> -->
+                                    <!-- <i class="fa-regular fa-lightbulb"></i> -->
+                                    <!-- <i class="fa-solid fa-bolt-lightning"></i> -->
+                                    <i class="fa-solid fa-toggle-on"></i>
+                                </span>
+                            </button>
+                        </l1>
+                    { /if }
                 {:else}
-                    <l1 class="menu-item last-item">
-                        <a href="{base}/music">
-                            <span>music</span>
-                        </a>
-                    </l1>
+                    { #if isLight }
+                        <l1 class="menu-item last-item">
+                            <button on:click={toggleMode}>
+                                <span>
+                                    <!-- <i class="fa-solid fa-moon"></i> -->
+                                    <i class="fa-solid fa-toggle-off"></i>
+                                </span>
+                            </button>
+                        </l1>
+                    { :else } 
+                        <l1 class="menu-item last-item">
+                            <button on:click={toggleMode}>
+                                <span>
+                                    <!-- <i class="fa-regular fa-sun"></i> -->
+                                    <!-- <i class="fa-regular fa-lightbulb"></i> -->
+                                    <!-- <i class="fa-solid fa-bolt-lightning"></i> -->
+                                    <i class="fa-solid fa-toggle-on"></i>
+                                </span>                            
+                            </button>
+                        </l1>
+                    { /if }
                 {/if}
             </ul>
         </div>
@@ -69,7 +130,7 @@
     .menu-item {
         margin: 10px 0;
         padding: 10px;
-        list-style: none
+        list-style: none;
     } 
 
     .img-item {
@@ -78,7 +139,7 @@
         width: 50;
         /* margin: 10px 0; */
         padding: 5px;
-        list-style: none
+        list-style: none;
     }
 
     .last-item {
@@ -111,15 +172,42 @@
     a {
         font-weight: 100;
         text-decoration: none;
+        color: inherit; /* inherits black/white color from div */
     }
 
-    span {
-        color: black;
+    .fa-toggle-off {
+        font-size: x-large;
+        border-top: 10px;
+        margin: 0;
+        vertical-align: middle;
     }
+
+    .fa-toggle-on {
+        color: white;
+        font-size: x-large;
+        border-top: 10px;
+        margin: 0;
+        vertical-align: middle;
+    }
+    
+    .fa-moon {
+        font-size: x-large;
+        margin: 0;
+    }
+
+    /* span {
+        color: black;
+    } */
 
     span:hover {
         color: #878787;
     }
+
+    .dark {
+        background-color: rgba(0, 0, 0, 0.907);
+        color: white;
+    }
+
 
 
 </style>
