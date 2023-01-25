@@ -1,11 +1,21 @@
 <script>
+    import Preload from "./../../Preload.svelte";
+    import '../../../styles.css'
     import "../poem.css"
+    import { theme } from "$lib/stores.js";
+	import { onMount } from 'svelte';
+    let themeClass = "";
+    onMount(async () => {
+        themeClass = $theme === 'light' ? "light2" : "dark2"
+	}); 
+
 </script>
 
+<Preload></Preload>
 <body>
     <h1 class="title">A Door For Change</h1>
-    <div class="poem">
-        <div class="poemtext"
+    <div class="poem"> 
+        <div class="poemtext {themeClass}"
             > In my kingdom of lead
             A wise man once said
             "You can't change the world"

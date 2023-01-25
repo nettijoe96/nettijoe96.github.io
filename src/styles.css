@@ -8,6 +8,10 @@
     background: transparent;
 }
 
+html {
+    overflow-y: scroll; 
+}
+
 .dark {
     background-color: #121212;
     color: white;

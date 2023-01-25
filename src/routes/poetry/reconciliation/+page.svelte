@@ -1,14 +1,23 @@
 <script>
+    import Preload from "./../../Preload.svelte";
+    import '../../../styles.css'
     import "../poem.css"
+    import { theme } from "$lib/stores.js";
+	import { onMount } from 'svelte';
+    let themeClass = "";
+    onMount(async () => {
+        themeClass = $theme === 'light' ? "light2" : "dark2"
+	}); 
 </script>
 
+<Preload></Preload>
 <body>
     <h1 class="title">
         Reconciliation
         <p><em>fabrication of a good memory</em></p>
     </h1>
     <div class="poem">
-        <div class="poemtext"
+        <div class="poemtext {themeClass}"
             > On nights that crawl
             I say to you
             Bless the hearts 

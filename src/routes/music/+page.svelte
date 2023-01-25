@@ -212,7 +212,6 @@
         width: 200px;
         margin: auto;
         margin-top: 5px;
-        /* float:left; */
         margin-right: 20px;
         margin-bottom: 20px;
         border-radius: .4rem;

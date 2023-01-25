@@ -8,7 +8,7 @@
     font-size: large;
     text-align: center;
     white-space: pre-line;
-    background-color: white;
+    background-color: inherit;
     padding: 1em;
 }
 
@@ -21,7 +21,15 @@
     display: inline-block;
     text-align: left;
     white-space: pre-line;
-    background-color: #eee;
     padding: 1em;
     margin-top: 0;
 }
+
+.light2 {
+    background-color: #eee;
+}
+
+.dark2 {
+    background-color: black;
+}
+
