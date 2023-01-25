@@ -7,3 +7,8 @@
     vertical-align: baseline;
     background: transparent;
 }
+
+.dark {
+    background-color: #121212;
+    color: white;
+}

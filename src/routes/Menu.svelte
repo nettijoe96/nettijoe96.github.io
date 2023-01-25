@@ -6,9 +6,10 @@
 
     function toggleMode() {
         if (isLight) {
+            document.documentElement.classList.add("dark");
             theme.set("dark")
         } else {
-
+            document.documentElement.classList.remove("dark");
             theme.set("light")
         }
     }
@@ -176,10 +177,12 @@
     }
 
     .fa-toggle-off {
+        color: black;
         font-size: x-large;
         border-top: 10px;
         margin: 0;
         vertical-align: middle;
+        cursor: pointer;
     }
 
     .fa-toggle-on {
@@ -188,6 +191,7 @@
         border-top: 10px;
         margin: 0;
         vertical-align: middle;
+        cursor: pointer;
     }
     
     .fa-moon {

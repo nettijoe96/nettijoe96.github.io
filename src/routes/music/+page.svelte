@@ -1,6 +1,8 @@
 <script>
     import '../../styles.css'
+    import Preload from "../Preload.svelte"
     import Menu from "../Menu.svelte";
+    import { fade } from 'svelte/transition';
 
     let innerWidth = 0
     let innerHeight = 0
@@ -14,19 +16,15 @@
             img.src = src
         })
     }
-
-    import { theme } from "$lib/stores.js";
-    $: isLight = $theme === 'light';
-    $: themeClass = isLight ? "light" : "dark"
-
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight/>
+<Preload></Preload>
 
 {#if innerWidth != 0}
     <Menu></Menu>
     {#await preload("music.png") then _}
-        <div class="top-div {themeClass}">
+        <div class="top-div">
             {#if isMobile}
                 <div class="top-div-mobile">
                     <ul>
@@ -34,7 +32,7 @@
                             <figure>
                                 <div class="card-mobile">
                                     <div class="card-image">
-                                        <img src="music.png" alt="record player and midi piano"/>
+                                        <img src="music.png" alt="record player and midi piano" in:fade/>
                                     </div>
                                 </div>
                             </figure>
@@ -79,7 +77,7 @@
                         <figure>
                             <div class="card-web">
                                 <div class="card-image">
-                                    <img src="music.png" alt="record player and midi piano"/>
+                                    <img src="music.png" alt="record player and midi piano" in:fade/>
                                 </div>
                             </div>
                         </figure>
@@ -126,9 +124,9 @@
 
 <style>
 
-    .top-div {
+    /* .top-div {
         height: 100vh;
-    }
+    } */
 
     .top-div-web {
         display: flex;
@@ -168,6 +166,10 @@
         padding: 5px;
         text-align: left;
         list-style: none
+    }
+
+    li:hover {
+        cursor: pointer;
     }
 
     .fa-soundcloud {
@@ -257,11 +259,6 @@
     .card-image {
         position: relative;
         text-align: center;
-    }
-
-    .dark {
-        background-color: black;
-        color: white;
     }
 
 </style>

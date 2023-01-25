@@ -1,14 +1,12 @@
 <script>
     import '../../styles.css'
+    import Preload from "../Preload.svelte"
     import Menu from "../Menu.svelte";
-
-    import { theme } from "$lib/stores.js";
-    $: isLight = $theme === 'light';
-    $: themeClass = isLight ? "light" : "dark"
 </script>
 
+<Preload></Preload>
 <Menu></Menu>
-<div class="{themeClass}">
+<div>
     <ul>
         <li>
             <a href="https://online-go.com/player/372785/">
@@ -68,10 +66,4 @@
     span:hover {
         color: #878787;
     }
-
-    .dark {
-        background-color: black;
-        color: white;
-    }
-
 </style>

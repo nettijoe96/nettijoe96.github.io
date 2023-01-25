@@ -1,5 +1,6 @@
 <script>
     import '../../styles.css'
+    import Preload from "../Preload.svelte"
     import Menu from "../Menu.svelte";
 
     let blogs = [
@@ -41,13 +42,11 @@
         }
     ]
 
-    import { theme } from "$lib/stores.js";
-    $: isLight = $theme === 'light';
-    $: themeClass = isLight ? "light" : "dark"
 </script>
 
+<Preload></Preload>
 <Menu></Menu>
-<div class="{themeClass}">
+<div>
     <ul>
         {#each blogs as {name, link}, i}
             <li>
@@ -74,16 +73,14 @@
 
     li {
         padding: 5px;
-        /* width: 50%; */
         text-align: left;
-        /* color: black; */
         font-family: 'Inter', sans-serif;
-        list-style: none
+        list-style: none;
     }
 
-    /* li:hover {
-        background-color: #B694FF;
-    } */
+    li:hover {
+        cursor: pointer;
+    }
 
     a {
         font-weight: 100;
@@ -94,10 +91,4 @@
     span:hover {
         color: #878787;
     }
-
-    .dark {
-        background-color: black;
-        color: white;
-    }
-
 </style>

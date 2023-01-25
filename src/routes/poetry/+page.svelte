@@ -2,6 +2,7 @@
     import '../../styles.css'
 	import Menu from '../Menu.svelte';
     import { base } from "$app/paths";
+    import Preload from "../Preload.svelte"
 
     let poems = [
         //"nft_link": "TODO",
@@ -43,16 +44,11 @@
             route: "poetry/home"
         },
     ]
-
-    import { theme } from "$lib/stores.js";
-
-    $: isLight = $theme === 'light';
-    $: themeClass = isLight ? "light" : "dark"
-
 </script>
 
+<Preload></Preload>
 <Menu></Menu>
-<div class="{themeClass}">
+<div>
     <ul>
         {#each poems as {name, route}, i}
             <li>
@@ -93,11 +89,6 @@
 
     span:hover {
         color: #878787;
-    }
-
-    .dark {
-        background-color: black;
-        color: white;
     }
 
 </style>
