@@ -5,33 +5,6 @@
     import { clickToCopy } from "./clickToCopy.js"
     import { fade } from 'svelte/transition';
 
-    let code = [
-        {
-            name: "go bloom filter package",
-            link: "https://github.com/nettijoe96/bloom"
-        },
-        {
-            name: "sveltekit static website",
-            link: "https://github.com/nettijoe96/nettijoe96.github.io"
-        },
-        {
-            name: "lightning network simulation",
-            link: "https://github.com/rustyrussell/million-channels-project"
-        },
-        {
-            name: "JWT c-lightning plugin",
-            link: "https://github.com/nettijoe96/jwt-factory"
-        },
-        {
-            name: "graphql c-lightning plugin",
-            link: "https://github.com/nettijoe96/c-lightning-graphql"
-        },
-        {
-            name: "indexed merkle tree",
-            link: "https://github.com/nettijoe96/BM-BGP/tree/master/indexedMerkleTree"
-        }
-    ]
-
     $: eth_copy = false;
     $: btc_copy = false;
     let eth = "0xF0cbDbf65380D0f7784a1E2723D13E2D6760264f"
@@ -62,6 +35,14 @@
         clickToCopy(node, target)
     }
 
+    function preload(src) {
+        return new Promise(function(resolve) {
+            let img = new Image()
+            img.onload = resolve
+            img.src = src
+        })
+    }
+
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight on:copysuccess={copySuccess} on:copyerror={copyError}/>
@@ -69,133 +50,123 @@
 
 {#if innerWidth != 0}
     <Menu></Menu>
-    <div class="{div_class}">
-        {#if !isMobile}
-                <figure>
-                    <div class="card">
-                        <div class="card_image">
-                            <img in:fade class="joe" src="me1.png" alt="Joe"/>
-                            <figcaption>
-                                Joe in front of a brick wall
-                            </figcaption>
+    {#await preload("me1.png") then _}
+        <div class="{div_class}">
+            {#if !isMobile}
+                    <figure>
+                        <div class="card">
+                            <div class="card_image">
+                                <img in:fade class="joe" src="me1.png" alt="Joe"/>
+                                <figcaption>
+                                    Joe in front of a brick wall
+                                </figcaption>
+                            </div>
                         </div>
-                    </div>
-                </figure>
-        {/if}
-        <div>   
-            <ul>
-                <li class="item">
-                    <h1>About</h1>
-                </li>
-                <li class="item">
-                    <p class="bio">My name is Joe Netti and I am backend software engineer. I am passionate about improving social media, privacy, governance, identity, and financial access with technology. I love music, poetry, biking and board games.</p>
-                </li>
-                <li class="item">
-                    <h1>Info</h1>
-                </li>
-                <li class="item">
-                    <a href="/resume">
-                        <span>
-                            <i class="fa-solid fa-file-lines"></i>
-                            Resume
-                        </span>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="https://github.com/nettijoe96">
-                        <span>
-                            <i class="fa-brands fa-github"></i>
-                            Github
-                        </span>
-                    </a>
-                </li>
-                <li class="item">
-                    <h1>
-                        Tech Stack
-                    </h1> 
-                </li>
-                <li class="item">
-                    <a href={"https://go.dev/doc/effective_go"}>
-                        <span>
-                            <i class="fa-brands fa-golang"></i>
-                            Golang
-                        </span>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href={"https://docs.python.org/3.12/library/index.html"}>
-                        <span>
-                            <i class="fa-brands fa-python"></i>
-                            Python
-                        </span>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href={"https://docs.python.org/3.12/library/index.html"}>
-                        <span>
-                            <img class="scala" src="scala.png" alt="scala icon"/>
-                            Scala
-                        </span>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href={"https://docs.docker.com/reference/"}>
-                        <span>
-                            <i class="fa-brands fa-docker"></i>
-                            Docker
-                        </span>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href={"https://docs.docker.com/reference/"}>
-                        <span>
-                            <i class="fa-solid fa-dharmachakra"></i>
-                            Kubernetes
-                        </span>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href={"https://svelte.dev/tutorial/basics"}>
-                        <span>
-                            <img class="svelte" src="svelte_red.jpg" alt="svelte icon"/>
-                            Svelte/Sveltekit
-                        </span>
-                    </a>
-                </li>
-                <li class="item">
-                    <h1>
-                        Code
-                    </h1> 
-                </li>
-                {#each code as {name, link}, i}
+                    </figure>
+            {/if}
+            <div>   
+                <ul>
                     <li class="item">
-                        <a href={link}>
-                            <span>{name}</span>
+                        <h1>About</h1>
+                    </li>
+                    <li class="item">
+                        <p class="bio">My name is Joe Netti and I am backend software engineer. I am passionate about improving social media, privacy, governance, identity, and financial access with technology. I love music, poetry, biking and board games.</p>
+                    </li>
+                    <li class="item">
+                        <h1>Info</h1>
+                    </li>
+                    <li class="item">
+                        <a href="/resume">
+                            <span>
+                                <i class="fa-solid fa-file-lines"></i>
+                                Resume
+                            </span>
                         </a>
                     </li>
-                {/each}
-                <li class="item">
-                    <h1>
-                        Crypto
-                    </h1> 
-                </li>
-                <li class="item">
-                    <i class="fa-brands fa-ethereum"></i>
-                    <p class="addr" use:clickToCopyWrapper>{eth}</p>
-                    {#if eth_copy}
-                        <p class="copied">✓</p>
-                    {/if}
-                </li>
-                <li class="item">
-                    <i class="fa-brands fa-bitcoin"></i>
-                    <p class="addr" use:clickToCopyWrapper>{btc}</p>
-                    {#if btc_copy}
-                        <p class="copied">✓</p>
-                    {/if}
-                </li>
-            </ul>
+                    <li class="item">
+                        <a href="https://github.com/nettijoe96">
+                            <span>
+                                <i class="fa-brands fa-github"></i>
+                                Github
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <h1>
+                            Code
+                        </h1> 
+                    </li>
+                    <li class="item">
+                        <a href="https://github.com/nettijoe96/bloom">
+                            <span>
+                                <i class="fa-brands fa-golang"></i>
+                                go bloom filter package
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://github.com/nettijoe96/nettijoe96.github.io">
+                            <span>
+                                <img class="svelte" src="svelte_red.jpg" alt="svelte icon"/>
+                                sveltekit static website
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://github.com/rustyrussell/million-channels-project">
+                            <span>
+                                <i class="fa-brands fa-python"></i>
+                                lightning network simulation
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://github.com/nettijoe96/jwt-factory">
+                            <span>
+                                <i class="fa-brands fa-golang"></i>
+                                JWT c-lightning plugin
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://github.com/nettijoe96/c-lightning-graphql">
+                            <span>
+                                <i class="fa-brands fa-golang"></i>
+                                graphql c-lightning plugin
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://github.com/nettijoe96/BM-BGP/tree/master/indexedMerkleTree">
+                            <span>
+                                <i class="fa-brands fa-python"></i>
+                                indexed merkle tree
+                            </span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <h1>
+                            Crypto
+                        </h1> 
+                    </li>
+                    <li class="item">
+                        <i class="fa-brands fa-ethereum"></i>
+                        <p class="addr" use:clickToCopyWrapper>{eth}</p>
+                        {#if eth_copy}
+                            <p class="copied">✓</p>
+                        {/if}
+                    </li>
+                    <li class="item">
+                        <i class="fa-brands fa-bitcoin"></i>
+                        <p class="addr" use:clickToCopyWrapper>{btc}</p>
+                        {#if btc_copy}
+                            <p class="copied">✓</p>
+                        {/if}
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    {/await}
 {/if}
 
 <style>
