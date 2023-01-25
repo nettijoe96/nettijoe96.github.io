@@ -4,6 +4,7 @@
     import Menu from "./Menu.svelte";
     import { clickToCopy } from "./clickToCopy.js"
     import { fade } from 'svelte/transition';
+    import { flip } from 'svelte/animate';
 
     $: eth_copy = false;
     $: btc_copy = false;
@@ -14,7 +15,7 @@
     let innerHeight = 0
     
     $: isMobile = innerWidth <= 500
-    $: div_class = (isMobile) ? "div-mobile" : "div-web"
+    $: div_class = (isMobile) ? "top-div-mobile" : "top-div-web"
 
     let text = '';
 	
@@ -43,6 +44,11 @@
         })
     }
 
+    let unique = {}
+    function restart() {
+        unique = {} // every {} is unique, {} === {} evaluates to false
+    }
+
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight on:copysuccess={copySuccess} on:copyerror={copyError}/>
@@ -54,8 +60,8 @@
         <div class="{div_class}">
             {#if !isMobile}
                     <figure>
-                        <div class="card">
-                            <div class="card_image">
+                        <div class="card-web">
+                            <div class="card-image">
                                 <img in:fade class="joe" src="me1.png" alt="Joe"/>
                                 <figcaption>
                                     Joe in front of a brick wall
@@ -66,6 +72,20 @@
             {/if}
             <div>   
                 <ul>
+                    {#if isMobile}
+                        <li class="item">
+                            <figure>
+                                <div class="card-mobile">
+                                    <div class="card-image">
+                                        <img in:fade class="joe" src="me1.png" alt="Joe"/>
+                                        <figcaption>
+                                            Joe in front of a brick wall
+                                        </figcaption>
+                                    </div>
+                                </div>
+                            </figure>
+                        </li>
+                    {/if}
                     <li class="item">
                         <h1>About</h1>
                     </li>
@@ -150,18 +170,22 @@
                         </h1> 
                     </li>
                     <li class="item">
-                        <i class="fa-brands fa-ethereum"></i>
-                        <p class="addr" use:clickToCopyWrapper>{eth}</p>
-                        {#if eth_copy}
-                            <p class="copied">✓</p>
-                        {/if}
+                        <span>
+                            <i class="fa-brands fa-ethereum"></i>
+                            <p class="addr" use:clickToCopyWrapper>{eth}</p>
+                            {#if eth_copy}
+                                <p class="copied">✓</p>
+                            {/if}
+                        </span>
                     </li>
                     <li class="item">
-                        <i class="fa-brands fa-bitcoin"></i>
-                        <p class="addr" use:clickToCopyWrapper>{btc}</p>
-                        {#if btc_copy}
-                            <p class="copied">✓</p>
-                        {/if}
+                        <span>
+                            <i class="fa-brands fa-bitcoin"></i>
+                            <p class="addr" use:clickToCopyWrapper>{btc}</p>
+                            {#if btc_copy}
+                                <p class="copied">✓</p>
+                            {/if}
+                        </span>
                     </li>
                 </ul>
             </div>
@@ -176,15 +200,17 @@
         font-family: 'Inter', sans-serif;
     }
 
-    .div-web {
+    .top-div-web {
         display: flex;
-        align-items: flex-start;
-        text-align: center;
         justify-content: center;
     }
 
-    .div-mobile {
-        text-align: center;
+    .top-div-mobile {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     ul {
@@ -202,11 +228,16 @@
         align-items: center;
     }
 
-    .item {
+    /* .item {
         padding: 5px;
         display: flex;
         flex-direction: row;
         align-items: center;
+    } */
+
+    li {
+        padding: 5px;
+        list-style: none
     }
 
     a {
@@ -280,6 +311,8 @@
     .addr {
         font-weight: 100;
         font-size: 10px;
+        display: inline;
+        cursor: pointer;
     }
 
     .addr:hover {
@@ -288,12 +321,32 @@
 
     .copied {
         font-size: 12px;
-        margin-left: 6px;
+        margin-left: 2px;
+        display: inline;
     }
 
-    .card {
+    figure {
+        text-align: center;
+        font-size: .85rem;
+    }
+
+    .card-mobile {
+        width: 200px;
+        margin: auto;
         margin-top: 20px;
-        float:left;
+        margin-bottom: 0px;
+        border-radius: .4rem;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.23),0 1px 3px rgba(0,0,0,0.08),0 6px 12px rgba(0,0,0,0.02);
+        -webkit-transition: box-shadow .1s ease-in-out;
+        transition: box-shadow .1s ease-in-out;
+        background-color: white;
+        color: black;
+    }
+
+    .card-web {
+        width: 200px;
+        margin: auto;
+        margin-top: 20px;
         margin-right: 20px;
         border-radius: .4rem;
         box-shadow: 0 4px 8px rgba(0,0,0,0.23),0 1px 3px rgba(0,0,0,0.08),0 6px 12px rgba(0,0,0,0.02);
@@ -303,22 +356,33 @@
         color: black;
     }
 
-    .card > :last-child {
+    .card-web > :last-child {
         border-bottom-right-radius: .4rem;
         border-bottom-left-radius: .4rem;
     }
-    .card > :first-child {
+    .card-web > :first-child {
         border-top-left-radius: .4rem;
         border-top-right-radius: .4rem;
     }
-    .card_image {
-        position: relative;
+
+    .card-mobile > :last-child {
+        border-bottom-right-radius: .4rem;
+        border-bottom-left-radius: .4rem;
     }
-    .card_image > img {
+    .card-mobile > :first-child {
+        border-top-left-radius: .4rem;
+        border-top-right-radius: .4rem;
+    }
+
+    .card-image > img {
         width: 200px;
         display: block;
         height: auto;
         border-radius: inherit;
+    }
+    .card-image {
+        position: relative;
+        text-align: center;
     }
 
     figcaption {

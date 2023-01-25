@@ -64,7 +64,6 @@
 
     div {
         text-align: center;
-        height: 100vh;
     }
 
     ul {

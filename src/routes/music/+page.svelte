@@ -124,10 +124,6 @@
 
 <style>
 
-    /* .top-div {
-        height: 100vh;
-    } */
-
     .top-div-web {
         display: flex;
         justify-content: center;
