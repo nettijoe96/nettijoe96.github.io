@@ -4,7 +4,6 @@
     import Menu from "./Menu.svelte";
     import { clickToCopy } from "./clickToCopy.js"
     import { fade } from 'svelte/transition';
-    import { flip } from 'svelte/animate';
 
     $: eth_copy = false;
     $: btc_copy = false;
@@ -62,9 +61,9 @@
                     <figure>
                         <div class="card-web">
                             <div class="card-image">
-                                <img in:fade class="joe" src="me1.png" alt="Joe"/>
+                                <img in:fade class="joe" src="me4.jpeg" alt="Joe"/>
                                 <figcaption>
-                                    Joe in front of a brick wall
+                                    Joe in front of a white wall
                                 </figcaption>
                             </div>
                         </div>
@@ -77,9 +76,9 @@
                             <figure>
                                 <div class="card-mobile">
                                     <div class="card-image">
-                                        <img in:fade class="joe" src="me1.png" alt="Joe"/>
+                                        <img in:fade class="joe" src="me4.jpeg" alt="Joe"/>
                                         <figcaption>
-                                            Joe in front of a brick wall
+                                            Joe in front of a white wall
                                         </figcaption>
                                     </div>
                                 </div>
@@ -346,7 +345,7 @@
     .card-web {
         width: 200px;
         margin: auto;
-        margin-top: 20px;
+        margin-top: 27px;
         margin-right: 20px;
         border-radius: .4rem;
         box-shadow: 0 4px 8px rgba(0,0,0,0.23),0 1px 3px rgba(0,0,0,0.08),0 6px 12px rgba(0,0,0,0.02);

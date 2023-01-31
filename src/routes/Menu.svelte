@@ -151,6 +151,8 @@
         margin: 0;
         padding: 0;
         border: 0;
+        /* background-color: #ffffff; */
+        /* background-color: #FBFAF5; */
         background: #fbfbfb;
         box-shadow: 0 1px 1px rgba(0,0,0,.05),0 1px 1px rgba(0,0,0,.05);
     }

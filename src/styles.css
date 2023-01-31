@@ -10,6 +10,8 @@
 
 html {
     overflow-y: scroll; 
+    /* background-color: #FBFAF5; */
+    background-color: white;
 }
 
 .dark {
