@@ -30,24 +30,22 @@
     <nav>
         <div class="menu-container {themeClass}">
             <ul class="menu">
-                {#if !isMobile}
-                    {#if isLight}
-                        <li class="menu-item img-item">
-                            <span>
-                                <a href="games">
-                                    <img src=/apple-touch-icon.png alt="go icon"/>
-                                </a>
-                            </span>
-                        </li>
-                    {:else}
-                        <li class="menu-item img-item">
-                            <span>
-                                <a href="games">
-                                    <img src=/negative.png alt="go icon"/>
-                                </a>
-                            </span>
-                        </li>  
-                    {/if}
+                {#if isLight}
+                    <li class="menu-item img-item">
+                        <span>
+                            <a href="games">
+                                <img src=/apple-touch-icon.png alt="go icon"/>
+                            </a>
+                        </span>
+                    </li>
+                {:else}
+                    <li class="menu-item img-item">
+                        <span>
+                            <a href="games">
+                                <img src=/negative.png alt="go icon"/>
+                            </a>
+                        </span>
+                    </li>  
                 {/if}
                 <l1 class="menu-item">
                     <a href="{base}/">
@@ -62,11 +60,6 @@
                 <l1 class="menu-item">
                     <a href="{base}/poetry">
                         <span>poetry</span>
-                    </a>
-                </l1>
-                <l1 class="menu-item">
-                    <a href="{base}/music">
-                        <span>music</span>
                     </a>
                 </l1>
                 {#if isMobile}
