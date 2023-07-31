@@ -17,9 +17,9 @@ import{S as be,i as ge,s as ke,w as Me,a as Ee,k as l,q as n,x as Ae,c as ye,l a
             Heave a sigh of `),A=l("em"),U=n("relief"),X=n(` ...
             An open heart for `),I=l("em"),Z=n("belief"),ee=n(` 
             and `),$=l("em"),te=n("beneath"),ae=n(` the sky
-            Falls [ an open door || rain once more ]
+            Falls [ an open door | rain once more ]
             Reins in this insane wind
-            `),H=l("pre"),ne=n("Heavenly gates: [ adore || no more ]"),this.h()},l(s){Ae(c.$$.fragment,s),_=ye(s),d=m(s,"BODY",{});var h=i(d);f=m(h,"H1",{class:!0});var oe=i(f);u=o(oe,"A Door For Change"),oe.forEach(r),D=ye(h),p=m(h,"DIV",{class:!0});var re=i(p);t=m(re,"DIV",{class:!0});var a=i(t);F=o(a,`In my kingdom of lead
+            `),H=l("pre"),ne=n("Heavenly gates: [ adore | no more ]"),this.h()},l(s){Ae(c.$$.fragment,s),_=ye(s),d=m(s,"BODY",{});var h=i(d);f=m(h,"H1",{class:!0});var oe=i(f);u=o(oe,"A Door For Change"),oe.forEach(r),D=ye(h),p=m(h,"DIV",{class:!0});var re=i(p);t=m(re,"DIV",{class:!0});var a=i(t);F=o(a,`In my kingdom of lead
             A wise man once said
             "You can't change the world"
             And it's true--(but fuck it).
@@ -38,6 +38,6 @@ import{S as be,i as ge,s as ke,w as Me,a as Ee,k as l,q as n,x as Ae,c as ye,l a
             Heave a sigh of `),A=m(a,"EM",{});var _e=i(A);U=o(_e,"relief"),_e.forEach(r),X=o(a,` ...
             An open heart for `),I=m(a,"EM",{});var pe=i(I);Z=o(pe,"belief"),pe.forEach(r),ee=o(a,` 
             and `),$=m(a,"EM",{});var ue=i($);te=o(ue,"beneath"),ue.forEach(r),ae=o(a,` the sky
-            Falls [ an open door || rain once more ]
+            Falls [ an open door | rain once more ]
             Reins in this insane wind
-            `),H=m(a,"PRE",{});var ve=i(H);ne=o(ve,"Heavenly gates: [ adore || no more ]"),ve.forEach(r),a.forEach(r),re.forEach(r),h.forEach(r),this.h()},h(){z(f,"class","title"),z(t,"class",C="poemtext "+x[0]),z(p,"class","poem")},m(s,h){Ie(c,s,h),we(s,_,h),we(s,d,h),e(d,f),e(f,u),e(d,D),e(d,p),e(p,t),e(t,F),e(t,v),e(v,S),e(t,R),e(t,E),e(E,Y),e(t,j),e(t,y),e(y,q),e(t,L),e(t,w),e(w,T),e(t,V),e(t,b),e(b,W),e(t,B),e(t,g),e(g,G),e(t,O),e(t,k),e(k,J),e(t,K),e(t,M),e(M,N),e(t,Q),e(t,A),e(A,U),e(t,X),e(t,I),e(I,Z),e(t,ee),e(t,$),e($,te),e(t,ae),e(t,H),e(H,ne),P=!0},p(s,[h]){(!P||h&1&&C!==(C="poemtext "+s[0]))&&z(t,"class",C)},i(s){P||($e(c.$$.fragment,s),P=!0)},o(s){He(c.$$.fragment,s),P=!1},d(s){Pe(c,s),s&&r(_),s&&r(d)}}}function Se(x,c,_){let d;xe(x,De,u=>_(1,d=u));let f="";return Ce(async()=>{_(0,f=d==="light"?"light2":"dark2")}),[f]}class qe extends be{constructor(c){super(),ge(this,c,Se,Fe,ke,{})}}export{qe as default};
+            `),H=m(a,"PRE",{});var ve=i(H);ne=o(ve,"Heavenly gates: [ adore | no more ]"),ve.forEach(r),a.forEach(r),re.forEach(r),h.forEach(r),this.h()},h(){z(f,"class","title"),z(t,"class",C="poemtext "+x[0]),z(p,"class","poem")},m(s,h){Ie(c,s,h),we(s,_,h),we(s,d,h),e(d,f),e(f,u),e(d,D),e(d,p),e(p,t),e(t,F),e(t,v),e(v,S),e(t,R),e(t,E),e(E,Y),e(t,j),e(t,y),e(y,q),e(t,L),e(t,w),e(w,T),e(t,V),e(t,b),e(b,W),e(t,B),e(t,g),e(g,G),e(t,O),e(t,k),e(k,J),e(t,K),e(t,M),e(M,N),e(t,Q),e(t,A),e(A,U),e(t,X),e(t,I),e(I,Z),e(t,ee),e(t,$),e($,te),e(t,ae),e(t,H),e(H,ne),P=!0},p(s,[h]){(!P||h&1&&C!==(C="poemtext "+s[0]))&&z(t,"class",C)},i(s){P||($e(c.$$.fragment,s),P=!0)},o(s){He(c.$$.fragment,s),P=!1},d(s){Pe(c,s),s&&r(_),s&&r(d)}}}function Se(x,c,_){let d;xe(x,De,u=>_(1,d=u));let f="";return Ce(async()=>{_(0,f=d==="light"?"light2":"dark2")}),[f]}class qe extends be{constructor(c){super(),ge(this,c,Se,Fe,ke,{})}}export{qe as default};
