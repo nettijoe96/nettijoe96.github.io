@@ -35,10 +35,9 @@
             Heave a sigh of <em>relief</em> ...
             An open heart for <em>belief</em> 
             and <em>beneath</em> the sky
-            Falls an open door
-            Falls rain once more
+            [ Falls an open door || Falls rain once more ]
             Reins in this insane wind
-            Heavenly gates: adore
+            <pre>Heavenly gates: [ adore || no more ]</pre>
         </div>
     </div>
 </body>

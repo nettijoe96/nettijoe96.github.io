@@ -163,29 +163,6 @@
                             </span>
                         </a>
                     </li>
-                    <li class="item">
-                        <h1>
-                            Crypto
-                        </h1> 
-                    </li>
-                    <li class="item">
-                        <span>
-                            <i class="fa-brands fa-ethereum"></i>
-                            <p class="addr" use:clickToCopyWrapper>{eth}</p>
-                            {#if eth_copy}
-                                <p class="copied">✓</p>
-                            {/if}
-                        </span>
-                    </li>
-                    <li class="item">
-                        <span>
-                            <i class="fa-brands fa-bitcoin"></i>
-                            <p class="addr" use:clickToCopyWrapper>{btc}</p>
-                            {#if btc_copy}
-                                <p class="copied">✓</p>
-                            {/if}
-                        </span>
-                    </li>
                 </ul>
             </div>
         </div>
