@@ -4,7 +4,7 @@ import{S as be,i as ge,s as ke,w as Me,a as Ee,k as l,q as n,x as Ae,c as ye,l a
             And it's true--(but fuck it).
             
             It's `),v=l("em"),S=n("hard"),R=n(` to change.
-            And `),E=l("em"),Y=n("now"),j=n(`adays ...
+            And `),E=l("em"),Y=n("now"),j=n(` adays ...
             My brain is like a maze 
             and my head like is a penny jar
             Shoot, `),y=l("em"),q=n("one"),L=n(` tw--WAIT!
@@ -25,7 +25,7 @@ import{S as be,i as ge,s as ke,w as Me,a as Ee,k as l,q as n,x as Ae,c as ye,l a
             And it's true--(but fuck it).
             
             It's `),v=m(a,"EM",{});var se=i(v);S=o(se,"hard"),se.forEach(r),R=o(a,` to change.
-            And `),E=m(a,"EM",{});var le=i(E);Y=o(le,"now"),le.forEach(r),j=o(a,`adays ...
+            And `),E=m(a,"EM",{});var le=i(E);Y=o(le,"now"),le.forEach(r),j=o(a,` adays ...
             My brain is like a maze 
             and my head like is a penny jar
             Shoot, `),y=m(a,"EM",{});var me=i(y);q=o(me,"one"),me.forEach(r),L=o(a,` tw--WAIT!
