@@ -91,9 +91,9 @@
                     <li class="item">
                         <p class="bio">My name is Joe Netti and I am backend software engineer. I am passionate about improving social media, privacy, governance, identity, and financial access with technology. I love music, poetry, biking and board games.</p>
                     </li>
-                    <li class="item">
+                    <!-- <li class="item">
                         <h1>Info</h1>
-                    </li>
+                    </li> -->
                     <!--commenting for Preface because I'm linking here-->
                     <!-- <li class="item">
                         <a href="/resume">
@@ -103,14 +103,14 @@
                             </span>
                         </a>
                     </li> -->
-                    <li class="item">
+                    <!-- <li class="item">
                         <a href="https://github.com/nettijoe96">
                             <span>
                                 <i class="fa-brands fa-github"></i>
                                 Github
                             </span>
                         </a>
-                    </li>
+                    </li> -->
                     <li class="item">
                         <h1>
                             Code

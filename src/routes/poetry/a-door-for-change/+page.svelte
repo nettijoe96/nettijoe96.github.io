@@ -22,7 +22,7 @@
             And it's true--(but fuck it).
             
             It's <em>hard</em> to change.
-            And <em>now</em>adays ...
+            And <em>now</em> adays ...
             My brain is like a maze 
             and my head like is a penny jar
             Shoot, <em>one</em> tw--WAIT!
