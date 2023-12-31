@@ -57,6 +57,11 @@
                         <span>blog</span>
                     </a>
                 </l1>
+                <l1 class="menu-item">
+                    <a href="{base}/poetry">
+                        <span>poetry</span>
+                    </a>
+                </l1>
                 {#if isMobile}
                     { #if isLight }
                         <l1 class="menu-item">

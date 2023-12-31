@@ -94,14 +94,15 @@
                     <li class="item">
                         <h1>Info</h1>
                     </li>
-                    <li class="item">
+                    <!--commenting for Preface because I'm linking here-->
+                    <!-- <li class="item">
                         <a href="/resume">
                             <span>
                                 <i class="fa-solid fa-file-lines"></i>
                                 Resume
                             </span>
                         </a>
-                    </li>
+                    </li> -->
                     <li class="item">
                         <a href="https://github.com/nettijoe96">
                             <span>
