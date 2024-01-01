@@ -1,20 +1,4 @@
 {
-  "src/routes/blog/+page.css": {
-    "file": "_app/immutable/assets/_page-37318f74.css",
-    "src": "src/routes/blog/+page.css"
-  },
-  "src/routes/poetry/+page.css": {
-    "file": "_app/immutable/assets/_page-a072f492.css",
-    "src": "src/routes/poetry/+page.css"
-  },
-  "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page-ca51bc91.css",
-    "src": "src/routes/+page.css"
-  },
-  "poem.css": {
-    "file": "_app/immutable/assets/poem-8f1f2787.css",
-    "src": "poem.css"
-  },
   "src/routes/music/+page.css": {
     "file": "_app/immutable/assets/_page-ced130b5.css",
     "src": "src/routes/music/+page.css"
@@ -23,44 +7,72 @@
     "file": "_app/immutable/assets/Menu-2d54e898.css",
     "src": "Menu.css"
   },
-  "src/routes/poetry/reconciliation/+page.css": {
-    "file": "_app/immutable/assets/_page-9e659959.css",
-    "src": "src/routes/poetry/reconciliation/+page.css"
+  "src/routes/+page.css": {
+    "file": "_app/immutable/assets/_page-ca51bc91.css",
+    "src": "src/routes/+page.css"
+  },
+  "src/routes/blog/+page.css": {
+    "file": "_app/immutable/assets/_page-37318f74.css",
+    "src": "src/routes/blog/+page.css"
   },
   "stores.css": {
     "file": "_app/immutable/assets/stores-482e793d.css",
     "src": "stores.css"
   },
-  "src/routes/code/+page.css": {
-    "file": "_app/immutable/assets/_page-39b2df53.css",
-    "src": "src/routes/code/+page.css"
-  },
   "src/routes/games/+page.css": {
     "file": "_app/immutable/assets/_page-18233d43.css",
     "src": "src/routes/games/+page.css"
   },
-  ".svelte-kit/generated/nodes/14.js": {
-    "file": "_app/immutable/chunks/14-225e6bf1.js",
-    "src": ".svelte-kit/generated/nodes/14.js",
-    "isDynamicEntry": true,
+  "src/routes/poetry/reconciliation/+page.css": {
+    "file": "_app/immutable/assets/_page-9e659959.css",
+    "src": "src/routes/poetry/reconciliation/+page.css"
+  },
+  "src/routes/poetry/+page.css": {
+    "file": "_app/immutable/assets/_page-a072f492.css",
+    "src": "src/routes/poetry/+page.css"
+  },
+  "poem.css": {
+    "file": "_app/immutable/assets/poem-8f1f2787.css",
+    "src": "poem.css"
+  },
+  "src/routes/code/+page.css": {
+    "file": "_app/immutable/assets/_page-39b2df53.css",
+    "src": "src/routes/code/+page.css"
+  },
+  "_index-b747512f.js": {
+    "file": "_app/immutable/chunks/index-b747512f.js",
     "imports": [
-      "src/routes/poetry/stoic-haikus/+page.svelte"
+      "_index-9a21a118.js"
     ]
   },
-  ".svelte-kit/generated/nodes/8.js": {
-    "file": "_app/immutable/chunks/8-fe11c85d.js",
-    "src": ".svelte-kit/generated/nodes/8.js",
+  ".svelte-kit/generated/nodes/15.js": {
+    "file": "_app/immutable/chunks/15-f14069eb.js",
+    "src": ".svelte-kit/generated/nodes/15.js",
     "isDynamicEntry": true,
     "imports": [
-      "src/routes/poetry/a-door-for-change/+page.svelte"
+      "src/routes/poetry/the-matchbox/+page.svelte"
     ]
   },
-  ".svelte-kit/generated/nodes/17.js": {
-    "file": "_app/immutable/chunks/17-29a29fcd.js",
-    "src": ".svelte-kit/generated/nodes/17.js",
+  "_Preload-2d6c1c73.js": {
+    "file": "_app/immutable/chunks/Preload-2d6c1c73.js",
+    "imports": [
+      "_index-9a21a118.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/6.js": {
+    "file": "_app/immutable/chunks/6-c4d66599.js",
+    "src": ".svelte-kit/generated/nodes/6.js",
     "isDynamicEntry": true,
     "imports": [
-      "src/routes/resume/+page.svelte"
+      "src/routes/music/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-e86332ac.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
     ]
   },
   ".svelte-kit/generated/nodes/10.js": {
@@ -71,12 +83,41 @@
       "src/routes/poetry/forgive/+page.svelte"
     ]
   },
-  "src/routes/+layout.js": {
-    "file": "_app/immutable/modules/pages/_layout.js-9cbb603b.js",
-    "src": "src/routes/+layout.js",
+  ".svelte-kit/generated/nodes/17.js": {
+    "file": "_app/immutable/chunks/17-29a29fcd.js",
+    "src": ".svelte-kit/generated/nodes/17.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/resume/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/13.js": {
+    "file": "_app/immutable/chunks/13-26c4c2d3.js",
+    "src": ".svelte-kit/generated/nodes/13.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/poetry/reconciliation/+page.svelte"
+    ]
+  },
+  "src/routes/poetry/back!/+page.svelte": {
+    "file": "_app/immutable/components/pages/poetry/back!/_page.svelte-f9e19904.js",
+    "src": "src/routes/poetry/back!/+page.svelte",
     "isEntry": true,
     "imports": [
-      "__layout-da46b06b.js"
+      "_index-9a21a118.js",
+      "_Preload-2d6c1c73.js",
+      "_stores-40762493.js"
+    ],
+    "css": [
+      "_app/immutable/assets/poem-8f1f2787.css"
+    ]
+  },
+  ".svelte-kit/generated/nodes/9.js": {
+    "file": "_app/immutable/chunks/9-a13f1c9c.js",
+    "src": ".svelte-kit/generated/nodes/9.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/poetry/back!/+page.svelte"
     ]
   },
   ".svelte-kit/generated/nodes/5.js": {
@@ -85,6 +126,65 @@
     "isDynamicEntry": true,
     "imports": [
       "src/routes/games/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-c7f83aa5.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/16.js": {
+    "file": "_app/immutable/chunks/16-0d89cb19.js",
+    "src": ".svelte-kit/generated/nodes/16.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/poetry/to-dance/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/3.js": {
+    "file": "_app/immutable/chunks/3-ce89935b.js",
+    "src": ".svelte-kit/generated/nodes/3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/blog/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/11.js": {
+    "file": "_app/immutable/chunks/11-c0d92926.js",
+    "src": ".svelte-kit/generated/nodes/11.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/poetry/home/+page.svelte"
+    ]
+  },
+  "_index-3378ab21.js": {
+    "file": "_app/immutable/chunks/index-3378ab21.js",
+    "imports": [
+      "_index-9a21a118.js"
+    ]
+  },
+  "src/routes/poetry/to-dance/+page.svelte": {
+    "file": "_app/immutable/components/pages/poetry/to-dance/_page.svelte-be780c33.js",
+    "src": "src/routes/poetry/to-dance/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9a21a118.js",
+      "_Preload-2d6c1c73.js",
+      "_stores-40762493.js"
+    ],
+    "css": [
+      "_app/immutable/assets/poem-8f1f2787.css"
+    ]
+  },
+  ".svelte-kit/generated/nodes/12.js": {
+    "file": "_app/immutable/chunks/12-46bca33b.js",
+    "src": ".svelte-kit/generated/nodes/12.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/poetry/peach-picking/+page.svelte"
     ]
   },
   "src/routes/resume/+page.svelte": {
@@ -98,13 +198,8 @@
       "_Menu-73fdc232.js"
     ]
   },
-  ".svelte-kit/generated/nodes/11.js": {
-    "file": "_app/immutable/chunks/11-c0d92926.js",
-    "src": ".svelte-kit/generated/nodes/11.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/poetry/home/+page.svelte"
-    ]
+  "_paths-b4419565.js": {
+    "file": "_app/immutable/chunks/paths-b4419565.js"
   },
   ".svelte-kit/generated/nodes/7.js": {
     "file": "_app/immutable/chunks/7-70d6e0cf.js",
@@ -122,153 +217,6 @@
       "_index-9a21a118.js"
     ]
   },
-  ".svelte-kit/generated/nodes/15.js": {
-    "file": "_app/immutable/chunks/15-f14069eb.js",
-    "src": ".svelte-kit/generated/nodes/15.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/poetry/the-matchbox/+page.svelte"
-    ]
-  },
-  "_index-3378ab21.js": {
-    "file": "_app/immutable/chunks/index-3378ab21.js",
-    "imports": [
-      "_index-9a21a118.js"
-    ]
-  },
-  ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-e86332ac.js",
-    "src": ".svelte-kit/generated/nodes/1.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-c7f83aa5.js",
-    "src": ".svelte-kit/generated/nodes/2.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/13.js": {
-    "file": "_app/immutable/chunks/13-26c4c2d3.js",
-    "src": ".svelte-kit/generated/nodes/13.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/poetry/reconciliation/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/12.js": {
-    "file": "_app/immutable/chunks/12-46bca33b.js",
-    "src": ".svelte-kit/generated/nodes/12.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/poetry/peach-picking/+page.svelte"
-    ]
-  },
-  "_index-b747512f.js": {
-    "file": "_app/immutable/chunks/index-b747512f.js",
-    "imports": [
-      "_index-9a21a118.js"
-    ]
-  },
-  "src/routes/games/+page.svelte": {
-    "file": "_app/immutable/components/pages/games/_page.svelte-f531724e.js",
-    "src": "src/routes/games/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9a21a118.js",
-      "_stores-40762493.js",
-      "_Preload-2d6c1c73.js",
-      "_Menu-73fdc232.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-18233d43.css"
-    ]
-  },
-  "_stores-40762493.js": {
-    "file": "_app/immutable/chunks/stores-40762493.js",
-    "imports": [
-      "_index-3378ab21.js"
-    ],
-    "css": [
-      "_app/immutable/assets/stores-482e793d.css"
-    ]
-  },
-  "src/routes/poetry/stoic-haikus/+page.svelte": {
-    "file": "_app/immutable/components/pages/poetry/stoic-haikus/_page.svelte-71ea4ef5.js",
-    "src": "src/routes/poetry/stoic-haikus/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9a21a118.js",
-      "_Preload-2d6c1c73.js",
-      "_stores-40762493.js"
-    ],
-    "css": [
-      "_app/immutable/assets/poem-8f1f2787.css"
-    ]
-  },
-  "_Preload-2d6c1c73.js": {
-    "file": "_app/immutable/chunks/Preload-2d6c1c73.js",
-    "imports": [
-      "_index-9a21a118.js"
-    ]
-  },
-  "src/routes/code/+page.svelte": {
-    "file": "_app/immutable/components/pages/code/_page.svelte-44832db2.js",
-    "src": "src/routes/code/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9a21a118.js",
-      "_stores-40762493.js",
-      "_Menu-73fdc232.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-39b2df53.css"
-    ]
-  },
-  "_paths-b4419565.js": {
-    "file": "_app/immutable/chunks/paths-b4419565.js"
-  },
-  ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-243715cb.js",
-    "src": ".svelte-kit/generated/nodes/3.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/blog/+page.svelte"
-    ]
-  },
-  "src/routes/poetry/+page.svelte": {
-    "file": "_app/immutable/components/pages/poetry/_page.svelte-6a5ff01b.js",
-    "src": "src/routes/poetry/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9a21a118.js",
-      "_stores-40762493.js",
-      "_Menu-73fdc232.js",
-      "_paths-b4419565.js",
-      "_Preload-2d6c1c73.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-a072f492.css"
-    ]
-  },
-  "src/routes/blog/+page.svelte": {
-    "file": "_app/immutable/components/pages/blog/_page.svelte-d55f0d42.js",
-    "src": "src/routes/blog/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9a21a118.js",
-      "_stores-40762493.js",
-      "_Preload-2d6c1c73.js",
-      "_Menu-73fdc232.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-37318f74.css"
-    ]
-  },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
     "file": "_app/immutable/components/error.svelte-330cb82a.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
@@ -278,53 +226,9 @@
       "_singletons-cd2c6095.js"
     ]
   },
-  ".svelte-kit/generated/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-3a7974b0.js",
-    "src": ".svelte-kit/generated/nodes/4.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/code/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/6.js": {
-    "file": "_app/immutable/chunks/6-c4d66599.js",
-    "src": ".svelte-kit/generated/nodes/6.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/music/+page.svelte"
-    ]
-  },
-  "_index-9a21a118.js": {
-    "file": "_app/immutable/chunks/index-9a21a118.js"
-  },
-  "__layout-da46b06b.js": {
-    "file": "_app/immutable/chunks/_layout-da46b06b.js"
-  },
-  ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-463241a6.js",
-    "src": ".svelte-kit/generated/nodes/0.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "__layout-da46b06b.js",
-      "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte"
-    ]
-  },
-  "src/routes/poetry/forgive/+page.svelte": {
-    "file": "_app/immutable/components/pages/poetry/forgive/_page.svelte-91979f52.js",
-    "src": "src/routes/poetry/forgive/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9a21a118.js",
-      "_Preload-2d6c1c73.js",
-      "_stores-40762493.js"
-    ],
-    "css": [
-      "_app/immutable/assets/poem-8f1f2787.css"
-    ]
-  },
-  "src/routes/poetry/back!/+page.svelte": {
-    "file": "_app/immutable/components/pages/poetry/back!/_page.svelte-f9e19904.js",
-    "src": "src/routes/poetry/back!/+page.svelte",
+  "src/routes/poetry/home/+page.svelte": {
+    "file": "_app/immutable/components/pages/poetry/home/_page.svelte-f0e6b566.js",
+    "src": "src/routes/poetry/home/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-9a21a118.js",
@@ -348,33 +252,20 @@
       "_app/immutable/assets/poem-8f1f2787.css"
     ]
   },
-  "src/routes/poetry/a-door-for-change/+page.svelte": {
-    "file": "_app/immutable/components/pages/poetry/a-door-for-change/_page.svelte-739fe868.js",
-    "src": "src/routes/poetry/a-door-for-change/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9a21a118.js",
-      "_Preload-2d6c1c73.js",
-      "_stores-40762493.js"
-    ],
-    "css": [
-      "_app/immutable/assets/poem-8f1f2787.css"
-    ]
-  },
-  ".svelte-kit/generated/nodes/9.js": {
-    "file": "_app/immutable/chunks/9-a13f1c9c.js",
-    "src": ".svelte-kit/generated/nodes/9.js",
+  ".svelte-kit/generated/nodes/8.js": {
+    "file": "_app/immutable/chunks/8-fe11c85d.js",
+    "src": ".svelte-kit/generated/nodes/8.js",
     "isDynamicEntry": true,
     "imports": [
-      "src/routes/poetry/back!/+page.svelte"
+      "src/routes/poetry/a-door-for-change/+page.svelte"
     ]
   },
-  ".svelte-kit/generated/nodes/16.js": {
-    "file": "_app/immutable/chunks/16-0d89cb19.js",
-    "src": ".svelte-kit/generated/nodes/16.js",
+  ".svelte-kit/generated/nodes/14.js": {
+    "file": "_app/immutable/chunks/14-225e6bf1.js",
+    "src": ".svelte-kit/generated/nodes/14.js",
     "isDynamicEntry": true,
     "imports": [
-      "src/routes/poetry/to-dance/+page.svelte"
+      "src/routes/poetry/stoic-haikus/+page.svelte"
     ]
   },
   "_singletons-cd2c6095.js": {
@@ -384,34 +275,8 @@
       "_paths-b4419565.js"
     ]
   },
-  "src/routes/music/+page.svelte": {
-    "file": "_app/immutable/components/pages/music/_page.svelte-d9f53db5.js",
-    "src": "src/routes/music/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9a21a118.js",
-      "_stores-40762493.js",
-      "_Preload-2d6c1c73.js",
-      "_Menu-73fdc232.js",
-      "_index-b747512f.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-ced130b5.css"
-    ]
-  },
-  "src/routes/poetry/reconciliation/+page.svelte": {
-    "file": "_app/immutable/components/pages/poetry/reconciliation/_page.svelte-bc5124c9.js",
-    "src": "src/routes/poetry/reconciliation/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9a21a118.js",
-      "_Preload-2d6c1c73.js",
-      "_stores-40762493.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-9e659959.css",
-      "_app/immutable/assets/poem-8f1f2787.css"
-    ]
+  "__layout-da46b06b.js": {
+    "file": "_app/immutable/chunks/_layout-da46b06b.js"
   },
   "src/routes/poetry/peach-picking/+page.svelte": {
     "file": "_app/immutable/components/pages/poetry/peach-picking/_page.svelte-2ec3a6e7.js",
@@ -426,9 +291,9 @@
       "_app/immutable/assets/poem-8f1f2787.css"
     ]
   },
-  "src/routes/poetry/home/+page.svelte": {
-    "file": "_app/immutable/components/pages/poetry/home/_page.svelte-f0e6b566.js",
-    "src": "src/routes/poetry/home/+page.svelte",
+  "src/routes/poetry/forgive/+page.svelte": {
+    "file": "_app/immutable/components/pages/poetry/forgive/_page.svelte-91979f52.js",
+    "src": "src/routes/poetry/forgive/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-9a21a118.js",
@@ -437,6 +302,67 @@
     ],
     "css": [
       "_app/immutable/assets/poem-8f1f2787.css"
+    ]
+  },
+  ".svelte-kit/generated/nodes/4.js": {
+    "file": "_app/immutable/chunks/4-3a7974b0.js",
+    "src": ".svelte-kit/generated/nodes/4.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/code/+page.svelte"
+    ]
+  },
+  "src/routes/+layout.js": {
+    "file": "_app/immutable/modules/pages/_layout.js-9cbb603b.js",
+    "src": "src/routes/+layout.js",
+    "isEntry": true,
+    "imports": [
+      "__layout-da46b06b.js"
+    ]
+  },
+  "src/routes/poetry/a-door-for-change/+page.svelte": {
+    "file": "_app/immutable/components/pages/poetry/a-door-for-change/_page.svelte-739fe868.js",
+    "src": "src/routes/poetry/a-door-for-change/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9a21a118.js",
+      "_Preload-2d6c1c73.js",
+      "_stores-40762493.js"
+    ],
+    "css": [
+      "_app/immutable/assets/poem-8f1f2787.css"
+    ]
+  },
+  "_stores-40762493.js": {
+    "file": "_app/immutable/chunks/stores-40762493.js",
+    "imports": [
+      "_index-3378ab21.js"
+    ],
+    "css": [
+      "_app/immutable/assets/stores-482e793d.css"
+    ]
+  },
+  "src/routes/blog/+page.svelte": {
+    "file": "_app/immutable/components/pages/blog/_page.svelte-f49ae208.js",
+    "src": "src/routes/blog/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9a21a118.js",
+      "_stores-40762493.js",
+      "_Preload-2d6c1c73.js",
+      "_Menu-73fdc232.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-37318f74.css"
+    ]
+  },
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-463241a6.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__layout-da46b06b.js",
+      "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte"
     ]
   },
   "_Menu-73fdc232.js": {
@@ -450,36 +376,8 @@
       "_app/immutable/assets/Menu-2d54e898.css"
     ]
   },
-  "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-2bb64cb8.js",
-    "src": "src/routes/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9a21a118.js",
-      "_stores-40762493.js",
-      "_Preload-2d6c1c73.js",
-      "_Menu-73fdc232.js",
-      "_index-b747512f.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-ca51bc91.css"
-    ]
-  },
-  "src/routes/poetry/to-dance/+page.svelte": {
-    "file": "_app/immutable/components/pages/poetry/to-dance/_page.svelte-be780c33.js",
-    "src": "src/routes/poetry/to-dance/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-9a21a118.js",
-      "_Preload-2d6c1c73.js",
-      "_stores-40762493.js"
-    ],
-    "css": [
-      "_app/immutable/assets/poem-8f1f2787.css"
-    ]
-  },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-0c4a8d84.js",
+    "file": "_app/immutable/start-2a17f3e0.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -506,6 +404,108 @@
       ".svelte-kit/generated/nodes/15.js",
       ".svelte-kit/generated/nodes/16.js",
       ".svelte-kit/generated/nodes/17.js"
+    ]
+  },
+  "src/routes/poetry/stoic-haikus/+page.svelte": {
+    "file": "_app/immutable/components/pages/poetry/stoic-haikus/_page.svelte-71ea4ef5.js",
+    "src": "src/routes/poetry/stoic-haikus/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9a21a118.js",
+      "_Preload-2d6c1c73.js",
+      "_stores-40762493.js"
+    ],
+    "css": [
+      "_app/immutable/assets/poem-8f1f2787.css"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-2bb64cb8.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9a21a118.js",
+      "_stores-40762493.js",
+      "_Preload-2d6c1c73.js",
+      "_Menu-73fdc232.js",
+      "_index-b747512f.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-ca51bc91.css"
+    ]
+  },
+  "src/routes/games/+page.svelte": {
+    "file": "_app/immutable/components/pages/games/_page.svelte-f531724e.js",
+    "src": "src/routes/games/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9a21a118.js",
+      "_stores-40762493.js",
+      "_Preload-2d6c1c73.js",
+      "_Menu-73fdc232.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-18233d43.css"
+    ]
+  },
+  "_index-9a21a118.js": {
+    "file": "_app/immutable/chunks/index-9a21a118.js"
+  },
+  "src/routes/poetry/+page.svelte": {
+    "file": "_app/immutable/components/pages/poetry/_page.svelte-6a5ff01b.js",
+    "src": "src/routes/poetry/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9a21a118.js",
+      "_stores-40762493.js",
+      "_Menu-73fdc232.js",
+      "_paths-b4419565.js",
+      "_Preload-2d6c1c73.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-a072f492.css"
+    ]
+  },
+  "src/routes/poetry/reconciliation/+page.svelte": {
+    "file": "_app/immutable/components/pages/poetry/reconciliation/_page.svelte-bc5124c9.js",
+    "src": "src/routes/poetry/reconciliation/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9a21a118.js",
+      "_Preload-2d6c1c73.js",
+      "_stores-40762493.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-9e659959.css",
+      "_app/immutable/assets/poem-8f1f2787.css"
+    ]
+  },
+  "src/routes/code/+page.svelte": {
+    "file": "_app/immutable/components/pages/code/_page.svelte-44832db2.js",
+    "src": "src/routes/code/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9a21a118.js",
+      "_stores-40762493.js",
+      "_Menu-73fdc232.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-39b2df53.css"
+    ]
+  },
+  "src/routes/music/+page.svelte": {
+    "file": "_app/immutable/components/pages/music/_page.svelte-d9f53db5.js",
+    "src": "src/routes/music/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-9a21a118.js",
+      "_stores-40762493.js",
+      "_Preload-2d6c1c73.js",
+      "_Menu-73fdc232.js",
+      "_index-b747512f.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-ced130b5.css"
     ]
   }
 }
