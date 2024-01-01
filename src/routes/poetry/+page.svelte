@@ -11,10 +11,10 @@
             name: "Stoic Haikus",
             route: "poetry/stoic-haikus"
         },
-        {
-            name: "Back!",
-            route: "poetry/back!"
-        },
+        // {
+        //     name: "Back!",
+        //     route: "poetry/back!"
+        // },
         {
             name: "A Door For Change",
             route: "poetry/a-door-for-change"

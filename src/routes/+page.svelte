@@ -89,7 +89,7 @@
                         <h1>About</h1>
                     </li>
                     <li class="item">
-                        <p class="bio">My name is Joe Netti and I am backend software engineer. I am passionate about improving social media, privacy, governance, identity, and financial access with technology. I love music, poetry, biking and board games.</p>
+                        <p class="bio">My name is Joe Netti and I am backend software engineer. I am passionate about improving social media, privacy, governance, identity, and financial access with technology. I love music, poetry, mountain climbing, and biking.</p>
                     </li>
                     <!-- <li class="item">
                         <h1>Info</h1>
@@ -111,7 +111,7 @@
                             </span>
                         </a>
                     </li> -->
-                    <li class="item">
+                    <!-- <li class="item">
                         <h1>
                             Code
                         </h1> 
@@ -164,7 +164,7 @@
                             </span>
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </div>
     {/await}

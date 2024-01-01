@@ -30,10 +30,10 @@
     <nav>
         <div class="menu-container {themeClass}">
             <ul class="menu">
-                {#if isLight}
+                <!-- {#if isLight}
                     <li class="menu-item img-item">
                         <span>
-                            <a href="games">
+                            <a href="{base}/">
                                 <img src=/apple-touch-icon.png alt="go icon"/>
                             </a>
                         </span>
@@ -41,20 +41,25 @@
                 {:else}
                     <li class="menu-item img-item">
                         <span>
-                            <a href="games">
+                            <a href="{base}/">
                                 <img src=/negative.png alt="go icon"/>
                             </a>
                         </span>
                     </li>  
-                {/if}
+                {/if} -->
                 <l1 class="menu-item">
                     <a href="{base}/">
-                        <span>code</span>
+                        <span>about</span>
                     </a>
                 </l1>
                 <l1 class="menu-item">
                     <a href="{base}/blog">
-                        <span>blog</span>
+                        <span>thoughts</span>
+                    </a>
+                </l1>
+                <l1 class="menu-item">
+                    <a href="{base}/code">
+                        <span>software</span>
                     </a>
                 </l1>
                 <l1 class="menu-item">
@@ -62,12 +67,11 @@
                         <span>poetry</span>
                     </a>
                 </l1>
-                {#if isMobile}
+                <!-- {#if isMobile}
                     { #if isLight }
                         <l1 class="menu-item">
                             <button on:click={toggleMode}>
                                 <span>
-                                    <!-- <i class="fa-solid fa-moon"></i> -->
                                     <i class="fa-solid fa-toggle-off"></i>
                                 </span>
                             </button>
@@ -76,9 +80,6 @@
                         <l1 class="menu-item">
                             <button on:click={toggleMode}>
                                 <span>
-                                    <!-- <i class="fa-regular fa-sun"></i> -->
-                                    <!-- <i class="fa-regular fa-lightbulb"></i> -->
-                                    <!-- <i class="fa-solid fa-bolt-lightning"></i> -->
                                     <i class="fa-solid fa-toggle-on"></i>
                                 </span>
                             </button>
@@ -89,7 +90,6 @@
                         <l1 class="menu-item last-item">
                             <button on:click={toggleMode}>
                                 <span>
-                                    <!-- <i class="fa-solid fa-moon"></i> -->
                                     <i class="fa-solid fa-toggle-off"></i>
                                 </span>
                             </button>
@@ -98,15 +98,12 @@
                         <l1 class="menu-item last-item">
                             <button on:click={toggleMode}>
                                 <span>
-                                    <!-- <i class="fa-regular fa-sun"></i> -->
-                                    <!-- <i class="fa-regular fa-lightbulb"></i> -->
-                                    <!-- <i class="fa-solid fa-bolt-lightning"></i> -->
                                     <i class="fa-solid fa-toggle-on"></i>
                                 </span>                            
                             </button>
                         </l1>
                     { /if }
-                {/if}
+                {/if} -->
             </ul>
         </div>
     </nav>
@@ -159,8 +156,11 @@
 
     .menu {
         margin-left: 0;
-        padding-left: 0;
-        padding: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
         text-align: center;
         font-family: 'Inter', sans-serif;
     }

@@ -28,10 +28,11 @@
             name: "Blockchain and BGP",
             link: "https://github.com/nettijoe96/BM-BGP/blob/master/BM-BGP.pdf"
         },
-        {
-            name: "AI and Human Extinction",
-            link: "https://steemit.com/anarchism/@ai-guy/3gjiju-killer-robots-artificial-intelligence-and-human-extinction"
-        },
+        // {
+        // // AI and Human Extinction
+        //     name: "AI and the Future of Humanity",
+        //     link: "https://steemit.com/anarchism/@ai-guy/3gjiju-killer-robots-artificial-intelligence-and-human-extinction"
+        // },
         {
             name: "Learn How To Play Go",
             link: "https://steemit.com/gaming/@nettijoe96/learn-how-to-play-go-the-world-s-oldest-game"
